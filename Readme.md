@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Анжелика Нартова](https://up.htmlacademy.ru/htmlcss/36/user/1359263).
-* Наставник: `Неизвестно`.
+* Наставник: Roman Zheltov (https://htmlacademy.ru/profile/id1145037).
 
 ---
 
