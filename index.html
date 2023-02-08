@@ -52,7 +52,7 @@
           <p class="slider-item-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным
             джемом – это
             идеальный десерт для всей семьи.</p>
-          <button class="main-button" type="button">Заказать</button>
+          <button class="main-button button" type="button">Заказать</button>
         </div>
         <div>
           <img class="slider-picture" src="images/banner-icecream-pink.png" width="327" height="507"
@@ -101,7 +101,7 @@
           <p class="slider-item-description">Сливочное мороженое c ярким банановым вкусом подарит вам свежесть и
             наслаждение даже
             в самый жаркий летний день.</p>
-          <button class="main-button" type="button">Заказать</button>
+          <button class="main-button button" type="button">Заказать</button>
         </div>
         <div>
           <img class="slider-picture" src="images/banner-icecream-yellow.png" width="312" height="507"
@@ -117,7 +117,7 @@
           <p class="slider-item-description">Необычный сладкий десерт c карамельным топпингом и кусочками зефира завоюет
             сердца
             сладкоежек всех возрастов.</p>
-          <button class="main-button" type="button">Заказать</button>
+          <button class="main-button button" type="button">Заказать</button>
         </div>
         <div>
           <img class="slider-picture" src="images/banner-icecream-leaf.png" width="350" height="507"
@@ -135,7 +135,7 @@
             <p class="offer-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку
               малинового варенья
               бесплатно.</p>
-            <button class="main-button" type="button">Хочу подарок</button>
+            <button class="main-button button" type="button">Хочу подарок</button>
           </div>
           <img class="offer-image" src="images/raspberry-in-the-cone.png" width="219" height="268" alt="Малина в рожке">
         </div>
@@ -145,7 +145,7 @@
             <p class="offer-description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок
               совершенно бесплатно.
             </p>
-            <button class="main-button" type="button">Хочу подарок</button>
+            <button class="main-button button" type="button">Хочу подарок</button>
           </div>
           <img class="offer-image" src="images/marsmellow-in-the-cone.png" width="219" height="268"
             alt="Зефирки в рожке">
@@ -154,40 +154,45 @@
 
       <section class="popular block-center">
         <h2>Попробуйте самые популярные вкусы нашего мороженого</h2>
-        <dl>
-          <div class="cards">
-            <img class="card-popular-picture" src="images/catalog/ice-cream-raspberry.jpg" width="168" height="168"
-              alt="Мороженое с малиновым джемом">
-            <dt class="popular-item">Малинка</dt>
-            <dd>Сливочное мороженое с малиновым джемом</dd>
-            <dd class="popular-item">310 ₽/кг</dd>
-            <button class="add-to-busket" type="button"></button>
-          </div>
-          <div class="cards">
-            <img class="card-popular-picture" src="images/catalog/ice-cream-pistachio.jpg" width="168" height="168"
-              alt="Мороженое с Фисташкой и кусочками шоколада">
-            <dt class="popular-item">Фисташка</dt>
-            <dd>Фисташковый пломбир с кусочками шоколада</dd>
-            <dd class="popular-item">340 ₽/кг</dd>
-            <button class="add-to-busket" type="button"></button>
-          </div>
-          <div class="cards">
-            <img class="card-popular-picture" src="images/catalog/ice-cream-blueberry.jpg" width="168" height="168"
-              alt="Мороженое крем-брюле">
-            <dt class="popular-item">Черника</dt>
-            <dd>Крем-брюле с черничным джемом</dd>
-            <dd class="popular-item">330 ₽/кг</dd>
-            <button class="add-to-busket" type="button"></button>
-          </div>
-          <div class="cards">
-            <img class="card-popular-picture" src="images/catalog/ice-cream-bubblegum.jpg" width="168" height="168"
-              alt="Мороженое с ванильным пломбиром">
-            <dt class="popular-item">Бабл-гам</dt>
-            <dd>Ванильный пломбир со сладкой посыпкой</dd>
-            <dd class="popular-item">320 ₽/кг</dd>
-            <button class="add-to-busket" type="button"></button>
-          </div>
-        </dl>
+        <ul>
+          <li class="cards">
+            <img class="product-card-image" src="images/catalog/ice-cream-raspberry.jpg" width="168" height="168" alt="Сливочное мороженое с малиновым джемом">
+            <h3 class="product-card-description">Малинка</h3>
+            <p>Сливочное мороженое с малиновым джемом</p>
+            <div>
+              <p class="product-card-description">310 ₽/кг</p>
+              <button class="add-to-cart" type="submit"></button>
+            </div>
+          </li>
+          <li class="cards">
+            <img class="product-card-image" src="images/catalog/ice-cream-pistachio.jpg" width="168" height="168" alt="Фисташковый пломбир с кусочками шоколада">
+            <h3 class="product-card-description">Фисташка</h3>
+            <p>Фисташковый пломбир с кусочками шоколада</p>
+            <div>
+              <p class="product-card-description">340 ₽/кг</p>
+              <button class="add-to-cart" type="submit"></button>
+            </div>
+          </li>
+          <li class="cards">
+            <img class="product-card-image" src="images/catalog/ice-cream-blueberry.jpg" width="168" height="168" alt="Крем-брюле мороженое с черничным джемом">
+            <h3 class="product-card-description">Черника</h3>
+            <p>Крем-брюле с черничным джемом</p>
+            <div>
+              <p class="product-card-description">330 ₽/кг</p>
+              <button class="add-to-cart" type="submit"></button>
+            </div>
+          </li>
+          <li class="cards">
+            <img class="product-card-image" src="images/catalog/ice-cream-bubblegum.jpg" width="168" height="168" alt="Ванильный пломбир со сладкой посыпкой">
+            <h3 class="product-card-description">Бабл-гам</h3>
+            <p>Ванильный пломбир со сладкой посыпкой</p>
+            <div>
+              <p class="product-card-description">320 ₽/кг</p>
+              <button class="add-to-cart" type="submit"></button>
+            </div>
+          </li>
+
+        </ul>
       </section>
 
       <section class="advantages block-center">
@@ -244,7 +249,7 @@
           </p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="subscription-input" type="email">
-            <button class="button-secondary" type="submit" name="email-subscription">
+            <button class="button-secondary button" type="submit" name="email-subscription">
               Отправить
             </button>
           </form>
@@ -275,20 +280,22 @@
             <label class="form-label" for="delivery-address">Адрес</label>
             <input type="text" id="delivery-address" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
           </p>
-          <button class="button-secondary" type="submit">Отправить</button>
+          <button class="button-secondary button" type="submit">Отправить</button>
         </form>
       </section>
 
       <section class="contacts block-center">
-        <h2 class="visually-hidden">Контакты</h2>
-        <address class="contacts-address">
-          <p>Адрес главного офиса и офлайн-магазина:</p>
-          <p class="contacts-address-text">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
-          <p>Для заказов по телефону:</p>
-          <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-          <p>(с 10 до 20 ежедневно)</p>
-        </address>
-        <button class="button-secondary" type="button">Форма обратной связи</button>
+        <div class="contacts-info">
+          <h2 class="visually-hidden">Контакты</h2>
+          <address class="contacts-address">
+            <p>Адрес главного офиса и офлайн-магазина:</p>
+            <p class="contacts-address-details">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
+            <p>Для заказов по телефону:</p>
+            <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+            <p class="contacts-schedule-details">(с 10 до 20 ежедневно)</p>
+          </address>
+          <button class="button-secondary button" type="button">Форма обратной связи</button>
+        </div>
       </section>
     </main>
 
@@ -309,14 +316,14 @@
         </li>
       </ul>
       <div>
-        <a class="footer-about-text" href="#">Для поставщиков</a>
-        <a class="footer-about-text" href="#">О производстве</a>
-        <a class="footer-about-text" href="#">Наши документы</a>
-        <a class="footer-about-text" href="#">Экологические стандарты</a>
+        <a class="footer-about-link footer-suppliers" href="#">Для поставщиков</a>
+        <a class="footer-about-link" href="#">О производстве</a>
+        <a class="footer-about-link" href="#">Наши документы</a>
+        <a class="footer-about-link" href="#">Экологические стандарты</a>
       </div>
       <div>
         <img src="images/logo-htmlacademy.svg" width="93" height="26" alt="Лого html academy">
-        <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+        <p class="html-logo-details">Сделано в <a class="html-logo-details" href="https://htmlacademy.ru/">
             .html academy</a>© 2023
         </p>
       </div>

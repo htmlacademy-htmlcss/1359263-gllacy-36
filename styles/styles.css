@@ -1,9 +1,12 @@
 :root {
---dark: #565C66;
---extra-dark: #2D3440;
---pink: #FEAFC3;
---dark-pink: #FF7799;
---white: #FCFCFC;
+  --dark: #565C66;
+  --extra-dark: #2D3440;
+  --pink: #FEAFC3;
+  --dark-pink: #FF7799;
+  --light-pink: rgb(252, 252, 252, 0.3);
+  --white: #FCFCFC;
+  --button-main: rgba(252, 252, 252, 0.4);
+  --button-secondary: #FF2F64;
 }
 
 @font-face {
@@ -39,16 +42,28 @@ body {
   background-color: var(--pink);
 }
 
-.main-button {
+.button {
   font-weight: 700;
   line-height: 20px;
-  color: var(--extra-dark);
-  background-color: var(--white);
-  text-align: center;
+  border-radius: 26px;
+}
+
+.main-button {
   width: 139px;
   height: 44px;
-  border-radius: 26px;
-  border: 4px solid rgba(45, 52, 64, 0.1);
+  color: var(--extra-dark);
+  background-color: var(--white);
+  border: 4px solid rgb(252, 252, 252, 0.4);
+  text-align: center;
+}
+
+.button-secondary {
+  min-width: 160px;
+  height: 52px;
+  color: var(--white);
+  background-color: var(--button-secondary);
+  border: 4px solid rgba(255, 47, 100, 0.3);
+  text-align: center;
 }
 
 .navigation-link {
@@ -63,11 +78,17 @@ body {
   line-height: 20px;
   color: var(--extra-dark);
   text-decoration: none;
-  color: inherit;
 }
 
 .navigation-link-account {
   font-size: 14px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+  color: var(--extra-dark);
 }
 
 h2 {
@@ -85,7 +106,7 @@ h3 {
 }
 
 .slider-title {
-font-size: 36px;
+  font-size: 36px;
 }
 
 .slider-item-description {
@@ -105,16 +126,16 @@ font-size: 36px;
 }
 
 .cards {
-background-color: var(--white);
-min-width: 270px;
-min-height: 281px;
+  background-color: var(--white);
+  min-width: 270px;
+  min-height: 281px;
 }
 
-.card-popular-picture {
+.product-card-image {
   border-radius: 50%;
 }
 
-.popular-item {
+.product-card-description {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -155,4 +176,121 @@ min-height: 281px;
 
 .subscription {
   background-image: url(../images/diagonal-lines.jpg);
+  border-radius: 16px;
+}
+
+.delivery {
+  min-width: 1170px;
+  min-height: 534px;
+  border-radius: 16px;
+  background-image: url(../images/icecream-on-table.jpg);
+}
+
+.form-label {
+  color: var(--extra-dark);
+  font-weight: 700;
+}
+
+.contacts {
+  min-width: 1170px;
+  min-height: 492px;
+  background-image: url(../images/trio-cones-icecream.jpg);
+  border-radius: 16px;
+}
+
+.contacts-info {
+  min-width: 343px;
+  min-height: 364px;
+  background-color: var(--white);
+  border-radius: 8px;
+}
+
+.contacts-address-details {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.contacts-phone {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--extra-dark);
+  text-decoration: none;
+}
+
+.contacts-schedule-details {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer-about-link {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--extra-dark);
+  text-decoration: none;
+}
+
+.footer-suppliers {
+  font-weight: 700;
+}
+
+.html-logo-details {
+  color: var(--extra-dark);
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+/* Catalog */
+
+.button-filter {
+  background-color: var(--light-pink);
+  border-radius: 20px;
+  border-color: var(--white);
+  text-align: center;
+}
+
+.breadcrumbs-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--extra-dark);
+  text-decoration: none;
+}
+
+.breadcrumbs-link-current {
+  text-decoration: underline;
+}
+
+.catalog-products {
+  color: var(--extra-dark);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.filter {
+  background-color: var(--light-pink);
+  border-color: transparent;
+  border-radius: 20px;
+  height: 36px;
+  min-width: 196px;
+}
+
+.catalog-filter-list {
+  border-radius: 16px;
+}
+
+.pagination-link {
+  text-decoration: none;
+  color: var(--extra-dark);
+  line-height: 20px;
+}
+
+.pagination-current {
+  background-color: var(--white);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  text-align: center;
 }
