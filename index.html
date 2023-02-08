@@ -33,10 +33,10 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Вход</a>
+            <a class="navigation-link navigation-link-account" href="#">Вход</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link navigation-link-account" href="#">
               <span class="visually-hidden">Корзина</span>
             </a>
           </li>
@@ -48,8 +48,9 @@
 
       <section class="slider block-center">
         <div class="slider-item">
-          <h2>Нежный пломбир с клубничным джемом</h2>
-          <p>Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это
+          <h2 class="slider-title">Нежный пломбир с клубничным джемом</h2>
+          <p class="slider-item-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным
+            джемом – это
             идеальный десерт для всей семьи.</p>
           <button class="main-button" type="button">Заказать</button>
         </div>
@@ -96,8 +97,9 @@
 
       <section class="slider visually-hidden block-center">
         <div class="slider-item">
-          <h2>Сливочное мороженое co вкусом банана</h2>
-          <p>Сливочное мороженое c ярким банановым вкусом подарит вам свежесть и наслаждение даже
+          <h2 class="slider-title">Сливочное мороженое co вкусом банана</h2>
+          <p class="slider-item-description">Сливочное мороженое c ярким банановым вкусом подарит вам свежесть и
+            наслаждение даже
             в самый жаркий летний день.</p>
           <button class="main-button" type="button">Заказать</button>
         </div>
@@ -112,7 +114,8 @@
       <section class="slider visually-hidden block-center">
         <div class="slider-item">
           <h2>Карамельный пломбир c маршмеллоу</h2>
-          <p>Необычный сладкий десерт c карамельным топпингом и кусочками зефира завоюет сердца
+          <p class="slider-item-description">Необычный сладкий десерт c карамельным топпингом и кусочками зефира завоюет
+            сердца
             сладкоежек всех возрастов.</p>
           <button class="main-button" type="button">Заказать</button>
         </div>
@@ -125,23 +128,28 @@
       </section>
 
       <section class="offer block-center">
-        <h2>Заказывайте мороженое и получайте подарки!</h2>
-        <div>
-          <div class="offer-item">
+        <h2 class="slider-title">Заказывайте мороженое и получайте подарки!</h2>
+        <div class="offer-item">
+          <div>
             <h3>Малинка даром!</h3>
-            <p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья
+            <p class="offer-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку
+              малинового варенья
               бесплатно.</p>
             <button class="main-button" type="button">Хочу подарок</button>
           </div>
           <img class="offer-image" src="images/raspberry-in-the-cone.png" width="219" height="268" alt="Малина в рожке">
         </div>
         <div class="offer-item">
-          <h3>Маршмеллоу даром!</h3>
-          <p>При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.
-          </p>
-          <button class="main-button" type="button">Хочу подарок</button>
+          <div>
+            <h3>Маршмеллоу даром!</h3>
+            <p class="offer-description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок
+              совершенно бесплатно.
+            </p>
+            <button class="main-button" type="button">Хочу подарок</button>
+          </div>
+          <img class="offer-image" src="images/marsmellow-in-the-cone.png" width="219" height="268"
+            alt="Зефирки в рожке">
         </div>
-        <img class="offer-image" src="images/marsmellow-in-the-cone.png" width="219" height="268" alt="Зефирки в рожке">
       </section>
 
       <section class="popular block-center">
@@ -150,33 +158,33 @@
           <div class="cards">
             <img class="card-popular-picture" src="images/catalog/ice-cream-raspberry.jpg" width="168" height="168"
               alt="Мороженое с малиновым джемом">
-            <dt>Малинка</dt>
+            <dt class="popular-item">Малинка</dt>
             <dd>Сливочное мороженое с малиновым джемом</dd>
-            <dd>310 ₽/кг</dd>
+            <dd class="popular-item">310 ₽/кг</dd>
             <button class="add-to-busket" type="button"></button>
           </div>
           <div class="cards">
             <img class="card-popular-picture" src="images/catalog/ice-cream-pistachio.jpg" width="168" height="168"
               alt="Мороженое с Фисташкой и кусочками шоколада">
-            <dt>Фисташка</dt>
+            <dt class="popular-item">Фисташка</dt>
             <dd>Фисташковый пломбир с кусочками шоколада</dd>
-            <dd>340 ₽/кг</dd>
+            <dd class="popular-item">340 ₽/кг</dd>
             <button class="add-to-busket" type="button"></button>
           </div>
           <div class="cards">
             <img class="card-popular-picture" src="images/catalog/ice-cream-blueberry.jpg" width="168" height="168"
               alt="Мороженое крем-брюле">
-            <dt>Черника</dt>
+            <dt class="popular-item">Черника</dt>
             <dd>Крем-брюле с черничным джемом</dd>
-            <dd>330 ₽/кг</dd>
+            <dd class="popular-item">330 ₽/кг</dd>
             <button class="add-to-busket" type="button"></button>
           </div>
           <div class="cards">
-            <img class="card-popular__picture" src="images/catalog/ice-cream-bubblegum.jpg" width="168" height="168"
+            <img class="card-popular-picture" src="images/catalog/ice-cream-bubblegum.jpg" width="168" height="168"
               alt="Мороженое с ванильным пломбиром">
-            <dt>Бабл-гам</dt>
+            <dt class="popular-item">Бабл-гам</dt>
             <dd>Ванильный пломбир со сладкой посыпкой</dd>
-            <dd>320 ₽/кг</dd>
+            <dd class="popular-item">320 ₽/кг</dd>
             <button class="add-to-busket" type="button"></button>
           </div>
         </dl>
@@ -187,7 +195,7 @@
           собственного производства на развес</h2>
         <ul class="advantages-list">
           <li class="advantages-item">
-            <img class="advantages-picture" src="images/item-icecream.svg" width="32" height="32"
+            <img class="advantages-picture" src="images/item-icecream.svg" width="16" height="32"
               alt="Минималистическое лого с мороженым">
             <p class="advantages-description">
               Всё наше мороженое изготавливается на собственном производстве с использованием современного
@@ -221,12 +229,14 @@
         </ul>
       </section>
 
-      <section class="our-blog block-center">
-        <h2 class="visually-hidden">Наш блог</h2>
-        <article class="new-in-blog">
-          <p class="blog-title">Новое в нашем блоге</p>
-          <a href=" #">10 способов сервировки фруктовых щербетов к столу</a>
-        </article>
+      <section class="block-center">
+        <div class="our-blog">
+          <h2 class="visually-hidden">Наш блог</h2>
+          <article class="new-in-blog">
+            <p class="blog-title">Новое в нашем блоге</p>
+            <a class="blog-description" href=" #">10 способов сервировки фруктовых щербетов к столу</a>
+          </article>
+        </div>
         <div class="subscription">
           <p class="subscription-title">
             Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас

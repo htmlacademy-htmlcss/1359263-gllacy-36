@@ -1,3 +1,11 @@
+:root {
+--dark: #565C66;
+--extra-dark: #2D3440;
+--pink: #FEAFC3;
+--dark-pink: #FF7799;
+--white: #FCFCFC;
+}
+
 @font-face {
   font-family: "inter";
   font-weight: 400;
@@ -5,6 +13,7 @@
   src: url("inter.woff2") format("woff2");
   font-display: swap;
 }
+
 @font-face {
   font-family: "inter";
   font-weight: 700;
@@ -12,6 +21,7 @@
   src: url("inter.woff2") format("woff2");
   font-display: swap;
 }
+
 @font-face {
   font-family: "inter";
   font-weight: 900;
@@ -22,7 +32,127 @@
 
 body {
   font-family: "inter", sans-serif;
-
+  font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  color: var(--dark);
+  background-color: var(--pink);
+}
+
+.main-button {
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--extra-dark);
+  background-color: var(--white);
+  text-align: center;
+  width: 139px;
+  height: 44px;
+  border-radius: 26px;
+  border: 4px solid rgba(45, 52, 64, 0.1);
+}
+
+.navigation-link {
+  line-height: 20px;
+  color: var(--extra-dark);
+  text-decoration: none;
+  color: inherit;
+}
+
+.phone-header {
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--extra-dark);
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigation-link-account {
+  font-size: 14px;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+  color: var(--extra-dark);
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--extra-dark);
+}
+
+.slider-title {
+font-size: 36px;
+}
+
+.slider-item-description {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--extra-dark);
+}
+
+.offer-description {
+  color: var(--extra-dark);
+}
+
+.offer-item {
+  background-color: var(--dark-pink);
+  min-width: 570px;
+  min-height: 268px;
+}
+
+.cards {
+background-color: var(--white);
+min-width: 270px;
+min-height: 281px;
+}
+
+.card-popular-picture {
+  border-radius: 50%;
+}
+
+.popular-item {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--extra-dark);
+}
+
+.advantages {
+  border-radius: 16px;
+  background-image: url(../images/pattern.jpg);
+}
+
+.advantages-picture {
+  width: 48px;
+  height: 48px;
+  border: 2px solid var(--extra-dark);
+  border-radius: 50%;
+  text-align: center;
+}
+
+.our-blog {
+  min-width: 570px;
+  min-height: 224px;
+  background-image: url(../images/trio-icecream.jpg);
+  border-radius: 16px;
+}
+
+.blog-description {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--extra-dark);
+}
+
+.blog-title {
+  line-height: 20px;
+}
+
+.subscription {
+  background-image: url(../images/diagonal-lines.jpg);
 }
