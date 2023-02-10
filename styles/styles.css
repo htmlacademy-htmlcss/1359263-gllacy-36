@@ -131,11 +131,11 @@ h3 {
   min-height: 281px;
 }
 
-.product-card-image {
+.product-card__image {
   border-radius: 50%;
 }
 
-.product-card-description {
+.product-card__description {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -259,7 +259,7 @@ h3 {
   text-decoration: none;
 }
 
-.breadcrumbs-link-current {
+.breadcrumbs-link_current {
   text-decoration: underline;
 }
 
