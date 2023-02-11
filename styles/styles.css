@@ -40,6 +40,7 @@ body {
   line-height: 22px;
   color: var(--dark);
   background-color: var(--pink);
+  margin: 0;
 }
 
 .button {
@@ -105,19 +106,22 @@ h3 {
   color: var(--extra-dark);
 }
 
+.slider {
+  color: var(--extra-dark);
+}
+
 .slider-title {
   font-size: 36px;
 }
 
-.slider-item-description {
+.slider-item__description {
   font-size: 18px;
   line-height: 24px;
-  color: var(--extra-dark);
 }
 
-.offer-description {
+.offer {
   color: var(--extra-dark);
-}
+}s
 
 .offer-item {
   background-color: var(--dark-pink);
