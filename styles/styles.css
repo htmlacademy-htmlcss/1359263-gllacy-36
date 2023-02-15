@@ -33,14 +33,25 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
   font-family: "inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: var(--dark);
   background-color: var(--pink);
-  margin: 0;
+}
+
+.visually-hidden {
+  display: none;
 }
 
 .button {
@@ -67,6 +78,47 @@ body {
   text-align: center;
 }
 
+.block-center {
+  display: flex;
+  justify-content: center;
+}
+
+.block-display {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  width: 1170px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.navigation-logo {
+  margin-right: 16px;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 590px;
+  list-style: none;
+  display: flex;
+}
+
+.navigation-item {
+  margin-right: 16px;
+}
+
+.navigation-item:last-child {
+  margin-right: 0;
+}
+
+.navigation-user {
+  max-width: 382px;
+  margin-left: auto;
+}
+
 .navigation-link {
   line-height: 20px;
   color: var(--extra-dark);
@@ -79,6 +131,8 @@ body {
   line-height: 20px;
   color: var(--extra-dark);
   text-decoration: none;
+  width: 148px;
+  margin-right: 16px;
 }
 
 .navigation-link-account {
@@ -104,29 +158,70 @@ h3 {
   font-size: 24px;
   line-height: 30px;
   color: var(--extra-dark);
+  margin: 0;
 }
 
 .slider {
   color: var(--extra-dark);
 }
 
+.slider-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .slider-title {
   font-size: 36px;
+  width: 470px;
 }
 
 .slider-item__description {
   font-size: 18px;
   line-height: 24px;
+  width: 429px;
+}
+
+.social-media {
+  list-style: none;
+  display: flex;
 }
 
 .offer {
   color: var(--extra-dark);
-}s
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offer-title {
+  width: 434px;
+  font-size: 32px;
+}
+
+.offer-blocks {
+  display: flex;
+  justify-content: space-between;
+  /* margin: 36px; */
+}
 
 .offer-item {
   background-color: var(--dark-pink);
-  min-width: 570px;
-  min-height: 268px;
+  width: 570px;
+  height: 268px;
+  display: flex;
+}
+
+.offer-description {
+  width: 304px;
+}
+
+.offer-item__margin {
+  margin-bottom: 28px;
+}
+
+.offer-item__margin:last-child {
+  margin-bottom: 0;
 }
 
 .cards {
