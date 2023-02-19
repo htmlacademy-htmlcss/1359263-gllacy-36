@@ -50,35 +50,32 @@
 
     <main class="main-index">
 
-      <section class="slider block-center">
+      <section class="slider block-center block-space">
         <div class="slider-item">
           <h2 class="slider-title">Нежный пломбир с клубничным джемом</h2>
           <p class="slider-item__description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным
             джемом – это
             идеальный десерт для всей семьи.</p>
           <button class="main-button button" type="button">Заказать</button>
+          <div class="pagination-section">
+            <ul>
+              <li class="pagination-button">
+                <a href="#"></a>
+              </li>
+              <li class="pagination-button">
+                <a href="#"></a>
+              </li>
+              <li class="pagination-button">
+                <a href="#"></a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div>
           <img class="slider-picture" src="images/banner-icecream-pink.png" width="327" height="507"
             alt="Мороженое c клубничным джемом">
           <button class="hidden-button button-forward" type="button">Вперед</button>
           <button class="hidden-button button-back" type="button">Назад</button>
-        </div>
-      </section>
-
-      <div class="block-display ">
-        <div class="pagination-section">
-          <ul>
-            <li class="pagination-button">
-              <a href="#"></a>
-            </li>
-            <li class="pagination-button">
-              <a href="#"></a>
-            </li>
-            <li class="pagination-button">
-              <a href="#"></a>
-            </li>
-          </ul>
         </div>
         <ul class="social-media">
           <li class="navigation-item">
@@ -97,15 +94,28 @@
             </a>
           </li>
         </ul>
-      </div>
+      </section>
 
-      <section class="slider visually-hidden block-center">
+      <section class="slider block-center block-space">
         <div class="slider-item">
           <h2 class="slider-title">Сливочное мороженое co вкусом банана</h2>
           <p class="slider-item__description">Сливочное мороженое c ярким банановым вкусом подарит вам свежесть и
             наслаждение даже
             в самый жаркий летний день.</p>
           <button class="main-button button" type="button">Заказать</button>
+          <div class="pagination-section">
+            <ul>
+              <li class="pagination-button">
+                <a href="#"></a>
+              </li>
+              <li class="pagination-button">
+                <a href="#"></a>
+              </li>
+              <li class="pagination-button">
+                <a href="#"></a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div>
           <img class="slider-picture" src="images/banner-icecream-yellow.png" width="312" height="507"
@@ -113,9 +123,26 @@
           <button class="hidden-button button-forward" type="button">Вперед</button>
           <button class="hidden-button button-back" type="button">Назад</button>
         </div>
+        <ul class="social-media">
+          <li class="navigation-item">
+            <a href="#">
+              <img src="images/social-telegram.svg" width="24" height="24" alt="Лого телеграм канала">
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a href="#">
+              <img src="images/social-vk.svg" width="24" height="24" alt="Лого платформы Вконтакте">
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a href="#">
+              <img src="images/social-youtube.svg" width="24" height="24" alt="Лого YouTube канала">
+            </a>
+          </li>
+        </ul>
       </section>
 
-      <section class="slider visually-hidden block-center">
+      <section class="slider block-center block-space">
         <div class="slider-item">
           <h2 class="slider-title">Карамельный пломбир c маршмеллоу</h2>
           <p class="slider-item__description">Необычный сладкий десерт c карамельным топпингом и кусочками зефира
@@ -123,6 +150,19 @@
             сердца
             сладкоежек всех возрастов.</p>
           <button class="main-button button" type="button">Заказать</button>
+          <div class="pagination-section">
+            <ul>
+              <li class="pagination-button">
+                <a href="#"></a>
+              </li>
+              <li class="pagination-button">
+                <a href="#"></a>
+              </li>
+              <li class="pagination-button">
+                <a href="#"></a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div>
           <img class="slider-picture" src="images/banner-icecream-leaf.png" width="350" height="507"
@@ -130,24 +170,42 @@
           <button class="hidden-button button-forward" type="button">Вперед</button>
           <button class="hidden-button button-back" type="button">Назад</button>
         </div>
+        <ul class="social-media">
+          <li class="navigation-item">
+            <a href="#">
+              <img src="images/social-telegram.svg" width="24" height="24" alt="Лого телеграм канала">
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a href="#">
+              <img src="images/social-vk.svg" width="24" height="24" alt="Лого платформы Вконтакте">
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a href="#">
+              <img src="images/social-youtube.svg" width="24" height="24" alt="Лого YouTube канала">
+            </a>
+          </li>
+        </ul>
       </section>
 
-      <section class="offer block-center">
+      <section class="offer block-center block-space">
         <h2 class="offer-title">Заказывайте мороженое и получайте подарки!</h2>
-        <div class="offer-blocks">
-          <div class="offer-item">
-            <div>
-              <h3 class="offer-item__margin">Малинка даром!</h3>
-              <p class="offer-description offer-item__margin">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку
+        <div class="offer-block">
+          <div class="offer__single-block">
+            <div class="offer__item">
+              <h3>Малинка даром!</h3>
+              <p class="offer-description">При покупке 2 кг любого фруктового мороженого добавим в
+                ваш заказ банку
                 малинового варенья
                 бесплатно.</p>
-              <button class="main-button button offer-item__margin" type="button">Хочу подарок</button>
+              <button class="main-button button" type="button">Хочу подарок</button>
             </div>
             <img class="offer-image" src="images/raspberry-in-the-cone.png" width="219" height="268"
               alt="Малина в рожке">
           </div>
-          <div class="offer-item">
-            <div>
+          <div class="offer__single-block">
+            <div class="offer__item">
               <h3>Маршмеллоу даром!</h3>
               <p class="offer-description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок
                 совершенно бесплатно.
@@ -160,50 +218,57 @@
         </div>
       </section>
 
-      <section class="popular block-center">
-        <h2>Попробуйте самые популярные вкусы нашего мороженого</h2>
-        <ul>
+      <section class="popular block-center block-space">
+        <h2 class="popular-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
+        <ul class="popular-block">
           <li class="cards">
             <img class="product-card__image" src="images/catalog/ice-cream-raspberry.jpg" width="168" height="168"
               alt="Сливочное мороженое с малиновым джемом">
-            <h3 class="product-card__description">Малинка</h3>
-            <p>Сливочное мороженое с малиновым джемом</p>
-            <div>
-              <p class="product-card__description">310 ₽/кг</p>
-              <button class="add-to-cart" type="submit"></button>
+            <div class="product-card">
+              <h3 class="product-card__description">Малинка</h3>
+              <p>Сливочное мороженое с малиновым джемом</p>
+              <div class="product-card__price">
+                <p class="product-card__description">310 ₽/кг</p>
+                <button class="add-to-cart" type="submit"></button>
+              </div>
             </div>
           </li>
           <li class="cards">
             <img class="product-card__image" src="images/catalog/ice-cream-pistachio.jpg" width="168" height="168"
               alt="Фисташковый пломбир с кусочками шоколада">
-            <h3 class="product-card__description">Фисташка</h3>
-            <p>Фисташковый пломбир с кусочками шоколада</p>
-            <div>
-              <p class="product-card__description">340 ₽/кг</p>
-              <button class="add-to-cart" type="submit"></button>
+            <div class="product-card">
+              <h3 class="product-card__description">Фисташка</h3>
+              <p>Фисташковый пломбир с кусочками шоколада</p>
+              <div class="product-card__price">
+                <p class="product-card__description">340 ₽/кг</p>
+                <button class="add-to-cart" type="submit"></button>
+              </div>
             </div>
           </li>
           <li class="cards">
             <img class="product-card__image" src="images/catalog/ice-cream-blueberry.jpg" width="168" height="168"
               alt="Крем-брюле мороженое с черничным джемом">
-            <h3 class="product-card__description">Черника</h3>
-            <p>Крем-брюле с черничным джемом</p>
-            <div>
-              <p class="product-card__description">330 ₽/кг</p>
-              <button class="add-to-cart" type="submit"></button>
+            <div class="product-card">
+              <h3 class="product-card__description">Черника</h3>
+              <p>Крем-брюле с черничным джемом</p>
+              <div class="product-card__price">
+                <p class="product-card__description">330 ₽/кг</p>
+                <button class="add-to-cart" type="submit"></button>
+              </div>
             </div>
           </li>
           <li class="cards">
             <img class="product-card__image" src="images/catalog/ice-cream-bubblegum.jpg" width="168" height="168"
               alt="Ванильный пломбир со сладкой посыпкой">
-            <h3 class="product-card__description">Бабл-гам</h3>
-            <p>Ванильный пломбир со сладкой посыпкой</p>
-            <div>
-              <p class="product-card__description">320 ₽/кг</p>
-              <button class="add-to-cart" type="submit"></button>
+            <div class="product-card">
+              <h3 class="product-card__description">Бабл-гам</h3>
+              <p>Ванильный пломбир со сладкой посыпкой</p>
+              <div class="product-card__price">
+                <p class="product-card__description">320 ₽/кг</p>
+                <button class="add-to-cart" type="submit"></button>
+              </div>
             </div>
           </li>
-
         </ul>
       </section>
 
