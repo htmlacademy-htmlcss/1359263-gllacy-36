@@ -1,6 +1,7 @@
 :root {
   --dark: #565C66;
   --extra-dark: #2D3440;
+  --light-gray: #B9B9B9;
   --pink: #FEAFC3;
   --dark-pink: #FF7799;
   --light-pink: rgb(252, 252, 252, 0.3);
@@ -88,6 +89,10 @@ p {
   background-color: var(--button-secondary);
   border: 4px solid rgba(255, 47, 100, 0.3);
   text-align: center;
+}
+
+.wide-button {
+  width: 250px;
 }
 
 .block-center {
@@ -192,12 +197,14 @@ h3 {
 .slider-title {
   font-size: 36px;
   width: 470px;
+  margin-bottom: 24px;
 }
 
 .slider-item__description {
   font-size: 18px;
   line-height: 24px;
   width: 429px;
+  margin-bottom: 48px;
 }
 
 .social-media {
@@ -269,6 +276,7 @@ h3 {
   min-height: 281px;
   margin-right: 30px;
   text-align: center;
+  border-radius: 8px;
 }
 
 .cards:last-child {
@@ -286,7 +294,6 @@ h3 {
   padding: 40px;
   padding-bottom: 24px;
   padding-top: 0;
-
 }
 
 .product-card__image {
@@ -312,6 +319,23 @@ h3 {
 .advantages {
   border-radius: 16px;
   background-image: url(../images/pattern.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1170px;
+  height: 480px;
+  align-items: center;
+}
+
+.advantages__title {
+  width: 995px;
+  font-size: 32px;
+  margin-bottom: 56px;
+  margin-top: 80px;
+}
+
+.advantages-item {
+  display: flex;
 }
 
 .advantages-picture {
@@ -320,62 +344,176 @@ h3 {
   border: 2px solid var(--extra-dark);
   border-radius: 50%;
   text-align: center;
+  margin-right: 16px;
 }
 
-.our-blog {
-  min-width: 570px;
-  min-height: 224px;
-  background-image: url(../images/trio-icecream.jpg);
+.advantages-description {
+  width: 440px;
+}
+
+.blog-container {
+  width: 570px;
+  height: 224px;
   border-radius: 16px;
 }
 
-.blog-description {
+.our-blog-block {
+  background-image: url(../images/trio-icecream.jpg);
+  margin-right: 30px;
+}
+
+.new-in-blog {
+  margin-left: 32px;
+  margin-top: 32px;
+}
+
+.our-blog__description {
+  display: inline-block;
   text-decoration: none;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
   color: var(--extra-dark);
+  width: 303px;
 }
 
-.blog-title {
+.our-blog__title {
   line-height: 20px;
+  width: 137px;
 }
 
-.subscription {
+.subscription-block {
   background-image: url(../images/diagonal-lines.jpg);
-  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscription-title {
+  width: 506px;
+  margin-bottom: 42px;
+}
+
+.subscription-input {
+  width: 332px;
+  height: 48px;
+  border-radius: 4px;
+  color: var(--light-gray);
+  border: 1px solid var(--light-gray);
 }
 
 .delivery {
-  min-width: 1170px;
-  min-height: 534px;
+  width: 1170px;
+  height: 534px;
   border-radius: 16px;
   background-image: url(../images/icecream-on-table.jpg);
+  display: flex;
+  align-items: center;
 }
 
-.form-label {
+.delivery-block {
+  margin-right: 150px;
+}
+
+.delivery-title {
+  font-size: 32px;
+  width: 356px;
+  margin-bottom: 24px;
+}
+
+.delivery-description {
+  width: 371px;
+}
+
+.delivery-form {
+  background-color: var(--white);
+  display: inline-block;
+  height: 406px;
+  border-radius: 8px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.delivery-form__title {
+  width: 420px;
+  margin-bottom: 32px;
+}
+
+.delivery-form__input {
+  color: var(--light-gray);
+  border-radius: 4px;
+  border: 1px solid var(--light-gray);
+  padding: 14px 16px 14px 16px;
+
+}
+
+.delivery-form__date-phone-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 420px;
+}
+
+.delivery-form__label {
   color: var(--extra-dark);
   font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.delivery-form__input-date {
+  width: 117px;
+}
+
+.delivery-form__input-phone {
+  width: 287px;
+}
+
+.delivery-form__label-address {
+  width: 420px;
+}
+
+.delivery-form__address {
+  margin-bottom: 32px;
 }
 
 .contacts {
-  min-width: 1170px;
-  min-height: 492px;
+  width: 1170px;
   background-image: url(../images/trio-cones-icecream.jpg);
   border-radius: 16px;
 }
 
 .contacts-info {
-  min-width: 343px;
-  min-height: 364px;
+  width: 343px;
+  height: 364px;
   background-color: var(--white);
   border-radius: 8px;
+  margin: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts-address__title {
+  width: 203px;
+  margin-bottom: 12px;
+}
+
+.contacts-address-margin {
+  margin-bottom: 24px;
 }
 
 .contacts-address-details {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  width: 263px;
 }
 
 .contacts-phone {
@@ -389,6 +527,23 @@ h3 {
 .contacts-schedule-details {
   font-size: 14px;
   line-height: 20px;
+  margin-bottom: 32px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 153px;
+  width: 1170px;
+}
+
+.social-item {
+  margin-right: 16px;
+}
+
+..social-item:last-child {
+  margin-right: 0;
 }
 
 .footer-about-link {
