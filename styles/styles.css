@@ -115,6 +115,10 @@ p {
   align-items: center;
 }
 
+.main-index {
+  flex-grow: 1;
+}
+
 .navigation {
   margin-top: 24px;
   margin-bottom: 24px;
