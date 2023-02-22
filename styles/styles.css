@@ -100,6 +100,12 @@ p {
   justify-content: center;
 }
 
+.block-left {
+  width: 1170px;
+  display: flex;
+  margin: 0 auto;
+}
+
 .block-space {
   margin-bottom: 80px;
 }
@@ -110,9 +116,6 @@ p {
 }
 
 .navigation {
-  width: 1170px;
-  display: flex;
-  margin: 0 auto;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -165,6 +168,7 @@ h1 {
   font-weight: 900;
   line-height: 46px;
   color: var(--extra-dark);
+  margin: 0;
 }
 
 h2 {
@@ -244,7 +248,7 @@ h3 {
 
 .offer__item {
   margin: 36px;
-  margin-right: 0px;
+  margin-right: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -428,7 +432,6 @@ h3 {
 
 .delivery-form {
   background-color: var(--white);
-  display: inline-block;
   height: 406px;
   border-radius: 8px;
   width: 500px;
@@ -542,7 +545,7 @@ h3 {
   margin-right: 16px;
 }
 
-..social-item:last-child {
+.social-item:last-child {
   margin-right: 0;
 }
 
@@ -566,11 +569,23 @@ h3 {
 
 /* Catalog */
 
-.button-filter {
-  background-color: var(--light-pink);
-  border-radius: 20px;
-  border-color: var(--white);
-  text-align: center;
+.header-inner {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.breadcrumbs {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.breadcrumbs-item {
+  margin-right: 28px;
+}
+
+.breadcrumbs-item:last-child {
+  margin-right: 0;
 }
 
 .breadcrumbs-link {
@@ -585,6 +600,10 @@ h3 {
   text-decoration: underline;
 }
 
+.catalog-filter {
+  margin-bottom: 44px;
+}
+
 .catalog-products {
   color: var(--extra-dark);
   font-size: 14px;
@@ -597,10 +616,38 @@ h3 {
   border-radius: 20px;
   height: 36px;
   min-width: 196px;
+  align-items: center;
 }
 
-.catalog-filter-list {
-  border-radius: 16px;
+.catalog__display {
+  display: flex;
+}
+
+.catalog-filter__section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  margin-right: 24px;
+}
+
+.catalog-filter__section:last-child {
+  margin-right: 0;
+}
+
+.catalog-filter__flavor-feature {
+  margin-right: 16px;
+}
+
+.button-filter {
+  background-color: var(--light-pink);
+  border-radius: 20px;
+  border-color: var(--white);
+  text-align: center;
+}
+
+.pagination {
+  display: flex;
+  width: 168px;
 }
 
 .pagination-link {
@@ -615,4 +662,19 @@ h3 {
   width: 24px;
   height: 24px;
   text-align: center;
+}
+
+.product-list {
+  margin-bottom: 16px;
+}
+
+.catalog-button {
+  margin-right: 335px;
+}
+
+.show-more-block { /* Почему эти свойства не применяются? */
+  margin-left: auto;
+  width: 1170px;
+  margin-bottom: 40px;
+  align-items: center;
 }
