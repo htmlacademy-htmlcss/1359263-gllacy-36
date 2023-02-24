@@ -59,6 +59,10 @@ ul {
   list-style: none;
 }
 
+ol {
+  list-style: none;
+}
+
 p {
   margin: 0;
 }
@@ -102,11 +106,6 @@ p {
   flex-direction: column;
   align-items: center;
   min-width: 1170px;
-}
-
-.block-left {
-  display: flex;
-  margin: 0 auto;
 }
 
 .block-space {
@@ -203,6 +202,7 @@ fieldset {
   color: var(--extra-dark);
   display: flex;
   align-items: flex-end;
+  justify-content: space-between;
 }
 
 .slider-item {
@@ -348,6 +348,7 @@ fieldset {
 
 .add-to-cart {
   background-image: url(../images/cart.svg);
+  background-repeat: no-repeat;
   width: 32px;
   height: 32px;
   border-radius: 26px;
@@ -616,6 +617,11 @@ fieldset {
   margin-bottom: 40px;
 }
 
+.block-left {
+  display: flex;
+  width: 1170px;
+}
+
 .breadcrumbs {
   display: flex;
   margin-bottom: 16px;
@@ -656,8 +662,27 @@ fieldset {
   border-color: transparent;
   border-radius: 20px;
   height: 36px;
-  min-width: 196px;
   align-items: center;
+  box-sizing: border-box;
+  min-width: 196px;
+}
+
+.select-control {
+  padding: 8px 10px 8px 16px;
+}
+
+.price-slider {
+  padding: 10px 16px 10px 16px;
+  background-image: url(../images/price-slider.svg);
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.fat-controls {
+  width: 440px;
+  box-sizing: border-box;
+  padding: 8px 24px 8px 24px;
+
 }
 
 .catalog__display {
@@ -668,16 +693,34 @@ fieldset {
 .catalog-filter__section {
   display: flex;
   flex-direction: column;
-  margin-bottom: 16px;
   margin-right: 24px;
+  margin-bottom: 16px;
+  min-width: 196px;
+  height: 64px;
 }
 
 .catalog-filter__section:last-child {
   margin-right: 0;
 }
 
-.catalog-filter__flavor-feature {
+.catalog-filter__flavor-section {
   margin-right: 16px;
+}
+
+.catalog-filter__tytle {
+  margin-bottom: 8px;
+  padding-right: 16px;
+}
+
+.catalog-filter__section:last-child {
+  margin-right: 0;
+}
+
+.catalog-filter__flavor {
+  margin-right: 16px;
+  padding: 10px 24px 10px 24px;
+  width: 604px;
+  height: 40px;
 }
 
 .button-filter {
@@ -696,6 +739,7 @@ fieldset {
   text-decoration: none;
   color: var(--extra-dark);
   line-height: 20px;
+  padding: 2px 7px 2px 7px;
 }
 
 .pagination-current {
@@ -704,6 +748,7 @@ fieldset {
   width: 24px;
   height: 24px;
   text-align: center;
+  padding: 2px 8px 2px 8px;
 }
 
 .product-list {
@@ -712,4 +757,6 @@ fieldset {
 
 .show-more-block {
   margin-bottom: 40px;
+  height: 126px;
+  align-items: center;
 }

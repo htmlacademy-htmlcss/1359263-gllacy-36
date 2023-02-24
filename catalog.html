@@ -71,7 +71,8 @@
           <h2 class="visually-hidden">Список товаров с фильтрами</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <div class="catalog__display">
-              <div class="catalog-filter__section">Сортировка:
+              <div class="catalog-filter__section">
+                <p class="catalog-filter__tytle">Сортировка:</p>
                 <select class="select-control filter" aria-label="Сортировка">
                   <option class="filter-popular" value="popular">по популярности</option>
                   <option value="cheap">сначала дешёвое</option>
@@ -79,8 +80,9 @@
                 </select>
               </div>
               <div class="range-filter">
-                <div class="price-controls catalog-filter__section">Цена 100₽-500₽:
-                  <input class="min-price filter" type="text" value="100₽">
+                <div class="price-controls catalog-filter__section">
+                  <p class="catalog-filter__tytle">Цена: 100 ₽ - 500 ₽</p>
+                  <input class="price-slider filter" type="text">
                 </div>
                 <div class="range-controls">
                   <div class="scale">
@@ -91,8 +93,8 @@
                 </div>
               </div>
               <fieldset class="catalog-filter__section">
-                <legend>Жирность:</legend>
-                <ul class="catalog__display filter">
+                <legend class="catalog-filter__tytle">Жирность:</legend>
+                <ul class="catalog__display filter fat-controls">
                   <li>
                     <label class="control">
                       <input class="control-input" type="checkbox" name="0%">0%
@@ -117,10 +119,10 @@
               </fieldset>
             </div>
             <div>
-              <fieldset>
-                <legend>Наполнители:</legend>
+              <fieldset class="catalog-filter__flavor-section">
+                <legend class="catalog-filter__tytle">Наполнители:</legend>
                 <div class="catalog__display">
-                  <ul class="filter catalog-filter__flavor-feature catalog__display">
+                  <ul class="filter catalog-filter__flavor catalog__display">
                     <li>
                       <label class="control">
                         <input class="control-input" type="checkbox" name="шоколадные" checked>шоколадные
