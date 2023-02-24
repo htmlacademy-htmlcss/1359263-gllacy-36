@@ -202,12 +202,18 @@ fieldset {
 .slider {
   color: var(--extra-dark);
   display: flex;
+  align-items: flex-end;
 }
 
 .slider-item {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+.slider-section {
+  margin-left: 70px;
+  margin-bottom: 126px;
 }
 
 .slider-title {
