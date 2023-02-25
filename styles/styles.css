@@ -709,7 +709,7 @@ fieldset {
 
 .catalog-filter__tytle {
   margin-bottom: 8px;
-  padding-right: 16px;
+  padding-left: 16px;
 }
 
 .catalog-filter__section:last-child {
