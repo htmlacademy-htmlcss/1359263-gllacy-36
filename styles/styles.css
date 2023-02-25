@@ -134,6 +134,7 @@ p {
   width: 590px;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation-item {
