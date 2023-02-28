@@ -68,7 +68,14 @@ p {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .button {
@@ -128,6 +135,9 @@ p {
 
 .navigation-logo {
   margin-right: 16px;
+  width: 137px;
+  display: flex;
+  align-items: center;
 }
 
 .navigation-list {
@@ -135,6 +145,7 @@ p {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  padding: 8px 16px 8px 16px;
 }
 
 .navigation-item {
@@ -150,11 +161,18 @@ p {
   margin-left: auto;
 }
 
+.navigation-user .navigation-link {
+  min-width: 16px;
+  min-height: 16px;
+}
+
 .navigation-link {
   line-height: 20px;
   color: var(--extra-dark);
   text-decoration: none;
   padding: 8px 16px 8px 16px;
+  display: block;
+  text-align: center;
 }
 
 .phone-header {
@@ -741,16 +759,18 @@ fieldset {
 
 .pagination-link {
   text-decoration: none;
+  display: block;
+  box-sizing: border-box;
   color: var(--extra-dark);
   line-height: 20px;
   padding: 2px 7px 2px 7px;
+  width: 24px;
+  height: 24px;
 }
 
 .pagination-current {
   background-color: var(--white);
   border-radius: 50%;
-  width: 24px;
-  height: 24px;
   text-align: center;
   padding: 2px 8px 2px 8px;
 }
