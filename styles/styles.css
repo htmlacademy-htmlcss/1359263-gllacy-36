@@ -378,10 +378,20 @@ fieldset {
   border-radius: 16px;
   background-image: url(../images/pattern.jpg);
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
   width: 1170px;
   height: 480px;
+}
+
+.advantages__background {
+  box-sizing: border-box;
+  background-color: var(--white);
+  width: calc(100% - 48px);
+  height: calc(100% - 48px);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -389,7 +399,6 @@ fieldset {
   width: 995px;
   font-size: 32px;
   margin-bottom: 56px;
-  margin-top: 80px;
 }
 
 .advantages-item {
@@ -414,8 +423,8 @@ fieldset {
 }
 
 .blog-container {
-  width: 570px;
-  height: 224px;
+  min-width: 570px;
+  min-height: 224px;
   border-radius: 16px;
 }
 
@@ -447,9 +456,21 @@ fieldset {
 .subscription-block {
   background-image: url(../images/diagonal-lines.jpg);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.subscription-block__background {
+  box-sizing: border-box;
+  height: calc(100% - 12px);
+  width: calc(100% - 12px);
+  padding: 26px;
+  background-color: var(--white);
+  border-radius: 16px;
+}
+
+.subscription-form {
+  display: flex;
 }
 
 .subscription-title {
