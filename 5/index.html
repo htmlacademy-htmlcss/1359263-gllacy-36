@@ -274,42 +274,44 @@
         </section>
 
         <section class="advantages block-space">
-          <h2 class="advantages__title">Магазин Глейси - это онлайн и офлайн-магазин по продаже мороженого
-            собственного производства на развес</h2>
-          <ul class="advantages-list">
-            <li class="advantages-item">
-              <img class="advantages-picture" src="images/item-icecream.svg" width="16" height="32"
-                alt="Минималистическое лого с мороженым">
-              <p class="advantages-description">
-                Всё наше мороженое изготавливается на собственном производстве с использованием современного
-                оборудования и проверенных временем технологий.
-              </p>
-            </li>
-            <li class="advantages-item">
-              <img class="advantages-picture" src="images/item-leaf.svg" width="18" height="32"
-                alt="Минималистическое лого с листом">
-              <p class="advantages-description">
-                Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты
-                и добавки произведены из натурального сырья.
-              </p>
-            </li>
-            <li class="advantages-item">
-              <img class="advantages-picture" src="images/item-cow.svg" width="32" height="32"
-                alt="Минималистическое лого с коровой">
-              <p class="advantages-description">
-                Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас
-                связывает долговременное сотрудничество.
-              </p>
-            </li>
-            <li class="advantages-item">
-              <img class="advantages-picture" src="images/item-thermometer.svg" width="18" height="32"
-                alt="Минималистическое лого с градусником">
-              <p class="advantages-description">
-                Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому
-                растаять и позволяет сохранить превосходный вкус.
-              </p>
-            </li>
-          </ul>
+          <div class="advantages__background">
+            <h2 class="advantages__title">Магазин Глейси - это онлайн и офлайн-магазин по продаже мороженого
+              собственного производства на развес</h2>
+            <ul class="advantages-list">
+              <li class="advantages-item">
+                <img class="advantages-picture" src="images/item-icecream.svg" width="16" height="32"
+                  alt="Минималистическое лого с мороженым">
+                <p class="advantages-description">
+                  Всё наше мороженое изготавливается на собственном производстве с использованием современного
+                  оборудования и проверенных временем технологий.
+                </p>
+              </li>
+              <li class="advantages-item">
+                <img class="advantages-picture" src="images/item-leaf.svg" width="18" height="32"
+                  alt="Минималистическое лого с листом">
+                <p class="advantages-description">
+                  Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты
+                  и добавки произведены из натурального сырья.
+                </p>
+              </li>
+              <li class="advantages-item">
+                <img class="advantages-picture" src="images/item-cow.svg" width="32" height="32"
+                  alt="Минималистическое лого с коровой">
+                <p class="advantages-description">
+                  Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас
+                  связывает долговременное сотрудничество.
+                </p>
+              </li>
+              <li class="advantages-item">
+                <img class="advantages-picture" src="images/item-thermometer.svg" width="18" height="32"
+                  alt="Минималистическое лого с градусником">
+                <p class="advantages-description">
+                  Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому
+                  растаять и позволяет сохранить превосходный вкус.
+                </p>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <section class="blog block-space">
@@ -321,16 +323,18 @@
             </article>
           </div>
           <div class="blog-container subscription-block">
-            <p class="subscription-title">
-              Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас
-              происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-            </p>
-            <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="subscription-input" type="email">
-              <button class="button-secondary button" type="submit" name="email-subscription">
-                Отправить
-              </button>
-            </form>
+            <div class="subscription-block__background">
+              <p class="subscription-title">
+                Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас
+                происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+              </p>
+              <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+                <input class="subscription-input" type="email">
+                <button class="button-secondary button" type="submit" name="email-subscription">
+                  Отправить
+                </button>
+              </form>
+            </div>
           </div>
         </section>
 
@@ -343,29 +347,26 @@
             </p>
           </div>
           <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-            <div>
-              <p class="delivery-form__title">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить
-                заказ.
+            <p class="delivery-form__title">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить
+              заказ.
+            </p>
+            <div class="delivery-form-grid">
+              <p class="delivery-form__date delivery__field-group">
+                <label class="delivery-form__label" for="delivery-date">Дата</label>
+                <input class="delivery-form__input" type="date" id="delivery-date" name="delivery-date">
               </p>
-              <div class="delivery-form__date-phone-block">
-                <p>
-                  <label class="delivery-form__label" for="delivery-date">Дата</label>
-                  <input class="delivery-form__input delivery-form__date" type="date" id="delivery-date"
-                    name="delivery-date">
-                </p>
-                <p>
-                  <label class="delivery-form__label" for="delivery-phone">Телефон</label>
-                  <input class="delivery-form__input delivery-form__phone" type="number" id="delivery-phone"
-                    name="delivery-phone" placeholder="+7 800 999-00-00">
-                </p>
-              </div>
-              <p class="">
+              <p class="delivery-form__phone delivery__field-group">
+                <label class="delivery-form__label" for="delivery-phone">Телефон</label>
+                <input class="delivery-form__input" type="number" id="delivery-phone" name="delivery-phone"
+                  placeholder="+7 800 999-00-00">
+              </p>
+              <p class="delivery-form__address delivery__field-group">
                 <label class="delivery-form__label" for="delivery-address">Адрес</label>
-                <input class="delivery-form__input delivery-form__address" type="text" id="delivery-address"
-                  name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
+                <input class="delivery-form__input" type="text" id="delivery-address" name="delivery-address"
+                  placeholder="ул. Большая Конюшенная, 19/8">
               </p>
+              <button class="button-secondary button delivery-form__button" type="submit">Отправить</button>
             </div>
-            <button class="button-secondary button delivery-form__button" type="submit">Отправить</button>
           </form>
         </section>
 
@@ -401,10 +402,10 @@
             </a>
           </li>
         </ul>
-        <div>
+        <div class="footer__items">
           <a class="footer-about-link footer-suppliers" href="#">Для поставщиков</a>
-          <a class="footer-about-link" href="#">О производстве</a>
           <a class="footer-about-link" href="#">Наши документы</a>
+          <a class="footer-about-link" href="#">О производстве</a>
           <a class="footer-about-link" href="#">Экологические стандарты</a>
         </div>
         <div>
