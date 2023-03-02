@@ -399,6 +399,15 @@ fieldset {
   width: 995px;
   font-size: 32px;
   margin-bottom: 56px;
+  margin-top: 56px;
+}
+
+.advantages-list {
+  display: grid;
+  grid-template-columns: 505px 505px;
+  grid-template-rows: 65px 65px;
+  column-gap: 32px;
+  row-gap: 40px;
 }
 
 .advantages-item {
@@ -515,11 +524,42 @@ fieldset {
 .delivery-form {
   background-color: var(--white);
   border-radius: 8px;
+  padding: 40px 40px 42px 40px;
+  margin: 64px;
+  box-sizing: border-box;
+}
+
+.delivery-form-grid {
+  display: grid;
+  grid-template-columns: 117px 287px;
+  gap: 16px 20px;
+}
+
+.delivery-form__address {
+  grid-row:  2/ 3;
+  grid-column:  1/ -1;
+}
+
+.delivery-form__date {
+  grid-column: 1 / 2;
+}
+
+.delivery-form__phone {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+}
+
+.delivery-form__button {
+  grid-column: 1 / -1;
+  justify-self: center;
+  min-width: 152px;
+  height: 44px;
+}
+
+.delivery__field-group {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 40px 42px 40px;
+  margin: 0;
 }
 
 .delivery-form__title {
@@ -539,31 +579,7 @@ fieldset {
 .delivery-form__label {
   color: var(--extra-dark);
   font-weight: 700;
-  display: flex;
-  flex-direction: column;
   margin-bottom: 8px;
-}
-
-.delivery-form__date-phone-block {
-  display: flex;
-  margin-bottom: 20px;
-}
-
-.delivery-form__date {
-  width: 117px;
-  margin-right: 16px;
-}
-
-.delivery-form__phone {
-  width: 287px;
-}
-
-.delivery-form__address {
-  width: 420px;
-}
-
-.delivery-form__button {
-  margin-top: 32px;
 }
 
 .contacts {
@@ -629,6 +645,14 @@ fieldset {
 
 .social-item:last-child {
   margin-right: 0;
+}
+
+.footer__items {
+  display: grid;
+  grid-template-columns: 126px 182px;
+  grid-template-rows: 20px 20px;
+  column-gap: 8px;
+  row-gap: 24px;
 }
 
 .footer-about-link {
