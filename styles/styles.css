@@ -342,6 +342,7 @@ fieldset {
   border-radius: 8px;
   align-content: end;
   display: inline-block;
+  padding-top: 51px;
 }
 
 .cards:last-child {
@@ -359,6 +360,7 @@ fieldset {
   padding: 40px;
   padding-bottom: 24px;
   padding-top: 0;
+
 }
 
 .product-card__image {
