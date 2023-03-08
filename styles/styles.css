@@ -82,6 +82,9 @@ p {
   font-weight: 700;
   line-height: 20px;
   border-radius: 26px;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
 }
 
 .main-button {
@@ -156,6 +159,26 @@ p {
   margin-right: 0;
 }
 
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: var(--extra-dark);
+}
+
+.navigation-link-login {
+padding-left: 56px;
+}
+
+.navigation-link-login .navigation-icon {
+  right: auto;
+  left: 16px;
+  margin: auto 0;
+}
+
 .navigation-user {
   max-width: 382px;
   margin-left: auto;
@@ -167,6 +190,7 @@ p {
 }
 
 .navigation-link {
+  position: relative;
   line-height: 20px;
   color: var(--extra-dark);
   text-decoration: none;
@@ -246,6 +270,10 @@ fieldset {
   line-height: 24px;
   width: 429px;
   margin-bottom: 48px;
+}
+
+.hidden-button {
+  cursor: pointer;
 }
 
 .social-media {
@@ -382,6 +410,7 @@ fieldset {
   height: 32px;
   border-radius: 26px;
   background-color: var(--button-secondary);
+  cursor: pointer;
 }
 
 .advantages {
@@ -518,7 +547,7 @@ fieldset {
 }
 
 .delivery-block {
-  padding-left: 100px;
+  margin-left: 100px;
 }
 
 .delivery-title {
@@ -564,6 +593,7 @@ fieldset {
   justify-self: center;
   min-width: 152px;
   height: 44px;
+  margin-top: 12px;
 }
 
 .delivery__field-group {
@@ -644,9 +674,10 @@ fieldset {
 .footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  height: 153px;
+  height: 57px;
   width: 1170px;
+  margin-top: 48px;
+  margin-bottom: 48px;
 }
 
 .social-item {
@@ -661,8 +692,12 @@ fieldset {
   display: grid;
   grid-template-columns: 126px 182px;
   grid-template-rows: 20px 20px;
-  column-gap: 8px;
-  row-gap: 24px;
+  column-gap: 24px;
+  row-gap: 8px;
+}
+
+.footer-logo {
+margin-bottom: 14px;
 }
 
 .footer-about-link {
@@ -694,6 +729,10 @@ fieldset {
 .block-left {
   display: flex;
   width: 1170px;
+}
+
+.block-space-less {
+  margin-bottom: 32px;
 }
 
 .breadcrumbs {
