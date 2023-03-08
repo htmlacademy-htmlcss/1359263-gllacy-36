@@ -148,7 +148,24 @@ p {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-link {
+  position: relative;
+  line-height: 20px;
+  color: var(--extra-dark);
+  text-decoration: none;
   padding: 8px 16px 8px 16px;
+  display: block;
+  text-align: center;
+}
+
+.navigation-user__link {
+  background-color: var(--light-pink);
+  border-radius: 27px;
 }
 
 .navigation-item {
@@ -171,6 +188,7 @@ p {
 
 .navigation-link-login {
 padding-left: 56px;
+font-size: 14px;
 }
 
 .navigation-link-login .navigation-icon {
@@ -189,16 +207,6 @@ padding-left: 56px;
   min-height: 16px;
 }
 
-.navigation-link {
-  position: relative;
-  line-height: 20px;
-  color: var(--extra-dark);
-  text-decoration: none;
-  padding: 8px 16px 8px 16px;
-  display: block;
-  text-align: center;
-}
-
 .phone-header {
   font-weight: 700;
   line-height: 20px;
@@ -206,10 +214,6 @@ padding-left: 56px;
   text-decoration: none;
   width: 148px;
   margin-right: 16px;
-}
-
-.navigation-link-account {
-  font-size: 14px;
 }
 
 h1 {
