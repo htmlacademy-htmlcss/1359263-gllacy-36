@@ -288,14 +288,62 @@ fieldset {
   margin-bottom: 48px;
 }
 
+.slider-picture {
+  background-image: url(../images/slider-round.svg);
+  background-repeat: no-repeat;
+  background-size: 327px 312px;
+  background-position: center;
+}
+
+.slider__picture-section {
+  display: flex;
+  align-items: center;
+}
+
 .hidden-button {
+  width: 38px;
+  height: 38px;
   cursor: pointer;
+  border: none;
+  display: inline-block;
+  background-color: var(--pink);
+}
+
+.button-forward {
+  background-image: url(../images/arrow-left.svg);
+  background-repeat: no-repeat;
+  background-size: 38px 38px;
+}
+
+.button-back {
+  background-image: url(../images/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: 38px 38px;
 }
 
 .social-media {
   list-style: none;
   display: flex;
 }
+
+/*
+.social-media::before {
+  content: url(../images/slider-banana.png);
+  display: inline-block;
+  width: 100px;
+  height: 150px;
+  position: relative;
+
+}
+
+.social-media::after {
+  content: url(../images/slider-vanilla.png);
+  display: inline-block;
+  width: 100px;
+  height: 150px;
+  position: relative;
+}
+*/
 
 .pagination-section {
   display: flex;
@@ -305,8 +353,12 @@ fieldset {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: var(--white);
+  background-color: rgb(252, 252, 252, 30%);
   margin-right: 8px;
+}
+
+.pagination-button-current {
+  background-color: var(--white);
 }
 
 .pagination-button:last-child {
@@ -641,6 +693,12 @@ fieldset {
   padding: 14px 16px 14px 16px;
   height: 48px;
   box-sizing: border-box;
+}
+
+.delivery-form__input::placeholder {
+  color: var(--light-gray);
+  opacity: 1;
+  font-size: 16px;
 }
 
 .delivery-form__label {
