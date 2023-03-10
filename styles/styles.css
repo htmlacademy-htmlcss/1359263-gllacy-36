@@ -4,7 +4,7 @@
   --light-gray: #B9B9B9;
   --pink: #FEAFC3;
   --dark-pink: #FF7799;
-  --light-pink: rgb(252, 252, 252, 0.3);
+  --light-pink: rgba(252, 252, 252, 0.3);
   --white: #FCFCFC;
   --button-main: rgba(252, 252, 252, 0.4);
   --button-secondary: #FF2F64;
@@ -97,6 +97,21 @@ p {
   text-align: center;
 }
 
+.main-button:hover {
+  background-color: var(--button-main);
+  outline: 4px solid var(--white);
+}
+
+.main-button:focus {
+  background-color: var(--button-main);
+  outline: 2px solid var(--extra-dark);
+}
+
+.main-button:active {
+  background-color: var(--white);
+  outline: 2px solid var(--extra-dark);
+}
+
 .button-secondary {
   min-width: 160px;
   height: 52px;
@@ -105,6 +120,24 @@ p {
   border: none;
   outline: 4px solid rgba(255, 47, 100, 0.3);
   text-align: center;
+}
+
+.button-secondary:hover {
+  background-color: var(--white);
+  outline: 4px solid var(--button-secondary);
+  color: var(--extra-dark);
+}
+
+.button-secondary:focus {
+  background-color: var(--button-secondary);
+  outline: 2px solid var(--extra-dark);
+  color: var(--white);
+}
+
+.button-secondary:active {
+  background-color: var(--pink);
+  color: var(--white);
+  outline: 2px solid var(--extra-dark);
 }
 
 .wide-button {
@@ -161,6 +194,22 @@ p {
   padding: 6px 16px 6px 16px;
   display: block;
   text-align: center;
+}
+
+.navigation-link:hover {
+  background-color: rgb(252, 252, 252, 0.5);
+  border-radius: 27px;
+}
+
+.navigation-link:focus {
+  background-color: var(--light-pink);
+  outline: 2px solid var(--extra-dark);
+  border-radius: 27px;
+}
+
+.navigation-link:active {
+  background-color: var(--white);
+  border-radius: 27px;
 }
 
 .navigation-user__link {
@@ -307,6 +356,8 @@ fieldset {
   border: none;
   display: inline-block;
   background-color: var(--pink);
+  border-radius: 50%;
+  color: var(--white);
 }
 
 .button-forward {
@@ -321,9 +372,18 @@ fieldset {
   background-size: 38px 38px;
 }
 
+.hidden-button:hover {
+  background-color: #FCFCFC;
+  color: #2D3440;
+}
+
 .social-media {
   list-style: none;
   display: flex;
+}
+
+.social-link:hover {
+  fill: var(--extra-dark);
 }
 
 /*
@@ -333,7 +393,7 @@ fieldset {
   width: 100px;
   height: 150px;
   position: relative;
-
+  order: 1;
 }
 
 .social-media::after {
@@ -342,6 +402,7 @@ fieldset {
   width: 100px;
   height: 150px;
   position: relative;
+  order: 2;
 }
 */
 
@@ -483,6 +544,16 @@ fieldset {
   background-color: var(--button-secondary);
   cursor: pointer;
 }
+
+.add-to-cart:hover {
+  background-color: var(--light-pink);
+  border: 2px solid var(--button-secondary);
+  fill: #2D3440;
+}
+
+.add-to-cart:focus {}
+
+.add-to-cart:active {}
 
 .advantages {
   border-radius: 16px;
@@ -831,7 +902,9 @@ fieldset {
 }
 
 .breadcrumbs-item {
-  margin-right: 28px;
+  margin-right: 8px;
+  position: relative;
+  padding-right: 20px;
 }
 
 .breadcrumbs-item:last-child {
@@ -846,8 +919,30 @@ fieldset {
   text-decoration: none;
 }
 
+.breadcrumbs-item::after {
+  content: url(../images/double-arrow-right.svg);
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: 0;
+}
+/* Не работает!
+.breadcrumbs-item::after .breadcrumbs-item:last-child{
+  content: none;
+}
+*/
 .breadcrumbs-link_current {
-  text-decoration: underline;
+  position: relative;
+}
+
+.breadcrumbs-link_current::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background-color: var(--extra-dark);
 }
 
 .catalog-filter {
@@ -931,14 +1026,30 @@ fieldset {
   border-radius: 20px;
   border: 2px solid var(--white);
   text-align: center;
-  border-radius: 20px;
   width: 185px;
   height: 36px;
+}
+
+.button-filter:hover {
+  background-color: var(--white);
+  outline: 2px solid var(--light-pink);
+}
+
+.button-filter:focus {
+  border: 2px solid var(--extra-dark);
+  outline: none;
+}
+
+.button-filter:active {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: none;
+  outline: none;
 }
 
 .pagination {
   display: flex;
   width: 168px;
+  cursor: pointer;
 }
 
 .pagination-link {
@@ -957,6 +1068,23 @@ fieldset {
   border-radius: 50%;
   text-align: center;
   padding: 2px 8px 2px 8px;
+}
+
+.pagination-prev {
+  background-image: url(../images/arrow-short-left.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center;
+  opacity: 30%;
+  margin-right: 8px;
+}
+
+.pagination-next {
+  background-image: url(../images/arrow-short-right.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center;
+  margin-left: 8px;
 }
 
 .product-list {
