@@ -195,8 +195,8 @@ p {
 }
 
 .navigation-link-login {
-padding-left: 38px;
-font-size: 14px;
+  padding-left: 38px;
+  font-size: 14px;
 }
 
 .navigation-user__search {
@@ -422,8 +422,11 @@ fieldset {
 .add-to-cart {
   background-image: url(../images/cart.svg);
   background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center;
   width: 32px;
   height: 32px;
+  border: none;
   border-radius: 26px;
   background-color: var(--button-secondary);
   cursor: pointer;
@@ -474,8 +477,9 @@ fieldset {
   height: 48px;
   border: 2px solid var(--extra-dark);
   border-radius: 50%;
-  text-align: center;
+  padding: 8px 8px;
   margin-right: 16px;
+  box-sizing: border-box;
 }
 
 .advantages-description {
@@ -591,8 +595,8 @@ fieldset {
 }
 
 .delivery-form__address {
-  grid-row:  2/ 3;
-  grid-column:  1/ -1;
+  grid-row: 2/ 3;
+  grid-column: 1/ -1;
 }
 
 .delivery-form__date {
@@ -713,7 +717,7 @@ fieldset {
 }
 
 .footer-logo {
-margin-bottom: 14px;
+  margin-bottom: 14px;
 }
 
 .footer-about-link {
