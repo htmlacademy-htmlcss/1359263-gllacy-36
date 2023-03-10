@@ -554,6 +554,13 @@ fieldset {
   border: 1px solid var(--light-gray);
   box-sizing: border-box;
   margin-right: 14px;
+  padding-left: 16px;
+}
+
+.subscription-input::placeholder {
+  color: var(--light-gray);
+  opacity: 1;
+  font-size: 16px;
 }
 
 .delivery {
@@ -714,6 +721,11 @@ fieldset {
   grid-template-rows: 20px 20px;
   column-gap: 24px;
   row-gap: 8px;
+  background-image: url(../images/heart.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: 0 0;
+  padding-left: 24px;
 }
 
 .footer-logo {
