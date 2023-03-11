@@ -342,6 +342,7 @@ fieldset {
   background-repeat: no-repeat;
   background-size: 327px 312px;
   background-position: center;
+  display: inline-block;
 }
 
 .slider__picture-section {
@@ -349,30 +350,53 @@ fieldset {
   align-items: center;
 }
 
-.hidden-button {
+.slider-wrapper {
+  position: relative;
+  min-width: 367px;
+  display: flex;
+  justify-content: center;
+}
+
+.slider-controls {
+position: absolute;
+top: 50%;
+width: 100%;
+transform: translateY(-50%);
+display: flex;
+justify-content: space-between;
+}
+
+.slider-button {
+  box-sizing: border-box;
   width: 38px;
   height: 38px;
   cursor: pointer;
-  border: none;
-  display: inline-block;
-  background-color: var(--pink);
-  border-radius: 50%;
+  border-radius: 26px;
   color: var(--white);
+  border: 2px solid rgba(252, 252, 252, 0.3);
+  padding: 11px 11px;
 }
 
-.button-forward {
-  background-image: url(../images/arrow-left.svg);
-  background-repeat: no-repeat;
-  background-size: 38px 38px;
-}
+.button-forward {}
+
 
 .button-back {
-  background-image: url(../images/arrow-right.svg);
-  background-repeat: no-repeat;
-  background-size: 38px 38px;
+  transform: rotate(-180deg);
 }
 
-.hidden-button:hover {
+
+.slider-button:hover {
+  background-color: #FCFCFC;
+  color: #2D3440;
+  border: none;
+}
+
+.slider-button:focus {
+  color: #2D3440;
+  border: 2px solid var(--extra-dark);
+}
+
+.slider-button:active {
   background-color: #FCFCFC;
   color: #2D3440;
 }
