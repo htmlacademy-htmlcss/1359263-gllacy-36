@@ -593,8 +593,8 @@ justify-content: space-between;
 
 .add-to-cart:hover {
   background-image: url(../images/cart-hover.svg);
-  background-size: 32px 32px;
   background-color: var(--white);
+  background-size: 32px 32px;
 }
 
 .add-to-cart:focus {
@@ -604,6 +604,7 @@ justify-content: space-between;
 
 .add-to-cart:active {
   background-image: url(../images/cart-active.svg);
+  background-color: var(--pink);
   background-size: 32px 32px;
 }
 
@@ -835,6 +836,8 @@ justify-content: space-between;
   height: 492px;
   background-image: url(../images/trio-cones-icecream.jpg);
   border-radius: 16px;
+  display: flex;
+
 }
 
 .contacts-info {
