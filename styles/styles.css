@@ -382,9 +382,20 @@ fieldset {
   display: flex;
 }
 
-.social-link:hover {
-  fill: var(--extra-dark);
+.social-link {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+
 }
+
+/* Почему так отображается????
+
+.social-link:hover {
+ background-color: var(--extra-dark);
+}
+
+*/
 
 /*
 .social-media::before {
@@ -425,6 +436,18 @@ fieldset {
 .pagination-button:last-child {
   margin-right: 0;
 }
+
+.pagination-button:hover {
+  border: 1px solid var(--white);
+}
+
+.pagination-button:focus {
+  border: 1px solid var(--extra-dark);
+}
+
+/*
+Почему при навидении у меня дергается страница и как будто увеличиваются кнопки пагинации?
+*/
 
 .offer {
   display: flex;
@@ -844,6 +867,13 @@ fieldset {
   margin-right: 0;
 }
 
+/* Не получается сделать
+.social-link:hover {
+  background-color: var(--extra-dark);
+  border-radius: 50%;
+}
+*/
+
 .footer__items {
   display: grid;
   grid-template-columns: 126px 182px;
@@ -926,6 +956,7 @@ fieldset {
   position: absolute;
   right: 0;
 }
+
 /* Не работает!
 .breadcrumbs-item::after .breadcrumbs-item:last-child{
   content: none;
@@ -1061,6 +1092,22 @@ fieldset {
   padding: 2px 7px 2px 7px;
   width: 24px;
   height: 24px;
+  border-radius: 50%;
+}
+
+.pagination-link:hover {
+  background-color: #FCFCFC80;
+}
+
+.pagination-link:focus {
+  border: 1px solid var(--extra-dark);
+  background-color: rgba(252, 252, 252, 0.3);
+  outline: none;
+}
+
+.pagination-link:active {
+  border: 1px solid var(--white);
+  background-color: rgba(252, 252, 252, 0.5);
 }
 
 .pagination-current {
