@@ -1067,7 +1067,6 @@ fieldset {
   height: 2px;
   background-color: rgb(86, 92, 102, 0.3);
   width: 164px;
-  position: fixed;
   justify-content: center;
   box-sizing: border-box;
 }
@@ -1117,7 +1116,7 @@ fieldset {
 }
 
 .range-scale-background {
-padding: 18px 16px;
+  padding: 18px 16px;
 }
 
 .range-wrapper-inputs {
@@ -1150,7 +1149,7 @@ padding: 18px 16px;
 .fat-controls {
   width: 440px;
   box-sizing: border-box;
-  padding: 8px 24px 8px 24px;
+  padding: 8px 24px 8px 48px;
 
 }
 
@@ -1182,6 +1181,40 @@ fieldset {
   padding: 0;
 }
 
+.control {
+  position: relative;
+  display: block;
+  padding-left: 8px;
+}
+
+.control-mark {
+  box-sizing: border-box;
+  position: absolute;
+  top: 2px;
+  left: -16px;
+  background-image: url(../images/filter-radio-button.svg);
+  background-size: 16px 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+.control:hover .control-mark {
+  background-image: url(../images/filter-radio-button-hover.svg);
+}
+
+.control-input:disabled + .control-mark {
+  background-image: none;
+  border: 1px solid var(--extra-dark);
+  border-radius: 50%;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url(../images/filter-radio-button-checked.svg);
+}
+
+
 .catalog-filter__flavor-section {
   margin-right: 16px;
 }
@@ -1197,7 +1230,7 @@ fieldset {
 
 .catalog-filter__flavor {
   margin-right: 16px;
-  padding: 10px 24px 10px 24px;
+  padding: 10px 24px 10px 48px;
   width: 604px;
   height: 40px;
 }
