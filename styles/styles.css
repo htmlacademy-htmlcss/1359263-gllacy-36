@@ -444,16 +444,12 @@ fieldset {
 }
 
 .pagination-button:hover {
-  border: 1px solid var(--white);
+  outline: 1px solid var(--white);
 }
 
 .pagination-button:focus {
-  border: 1px solid var(--extra-dark);
+  outline: 1px solid var(--extra-dark);
 }
-
-/*
-Почему при навидении у меня дергается страница и как будто увеличиваются кнопки пагинации?
-*/
 
 .offer {
   display: flex;
