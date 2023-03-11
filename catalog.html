@@ -90,6 +90,7 @@
         <section class="catalog-products block-left">
           <h2 class="visually-hidden">Список товаров с фильтрами</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+
             <div class="catalog__display">
               <div class="catalog-filter__section">
                 <p class="catalog-filter__tytle">Сортировка:</p>
@@ -99,19 +100,31 @@
                   <option value="expensive">сначала дорогое</option>
                 </select>
               </div>
-              <div class="range-filter">
-                <div class="price-controls catalog-filter__section">
-                  <p class="catalog-filter__tytle">Цена: 100 ₽ - 500 ₽</p>
-                  <input class="price-slider filter" type="text">
+
+              <div class="catalog-filter__section">
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label">
+                    Цена: <input class="range-input" type="number" value="100" name="min-price">₽
+                  </label>
+                  <label class="catalog-filter-label">
+                    - <input class="range-input" type="number" value="500" name="max-price" style="width: 37px">₽
+                  </label>
                 </div>
-                <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar"></div>
+                <div class="range-scale-background filter">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 24px; width: 56px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
                   </div>
-                  <div class="toogle min-toogle"></div>
-                  <div class="toogle max-toogle"></div>
                 </div>
               </div>
+
+
               <fieldset class="catalog-filter__section">
                 <legend class="catalog-filter__tytle">Жирность:</legend>
                 <ul class="catalog__display filter fat-controls">
@@ -138,6 +151,7 @@
                 </ul>
               </fieldset>
             </div>
+
             <div>
               <fieldset class="catalog-filter__flavor-section">
                 <legend class="catalog-filter__tytle">Наполнители:</legend>
