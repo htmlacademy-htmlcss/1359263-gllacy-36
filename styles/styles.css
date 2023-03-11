@@ -377,9 +377,6 @@ justify-content: space-between;
   padding: 11px 11px;
 }
 
-.button-forward {}
-
-
 .button-back {
   transform: rotate(-180deg);
 }
@@ -418,12 +415,12 @@ justify-content: space-between;
 }
 
 .social-link:focus {
-  background-color: var(--extra-dark);
+  fill: var(--extra-dark);
   outline: 2px solid var(--extra-dark);
 }
 
 .social-link:active {
-  background-color: var(--extra-dark);
+  fill: var(--extra-dark);
   opacity: 50%;
 }
 
