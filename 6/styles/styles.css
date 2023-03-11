@@ -342,6 +342,7 @@ fieldset {
   background-repeat: no-repeat;
   background-size: 327px 312px;
   background-position: center;
+  display: inline-block;
 }
 
 .slider__picture-section {
@@ -349,30 +350,50 @@ fieldset {
   align-items: center;
 }
 
-.hidden-button {
+.slider-wrapper {
+  position: relative;
+  min-width: 367px;
+  display: flex;
+  justify-content: center;
+}
+
+.slider-controls {
+position: absolute;
+top: 50%;
+width: 100%;
+transform: translateY(-50%);
+display: flex;
+justify-content: space-between;
+}
+
+.slider-button {
+  box-sizing: border-box;
   width: 38px;
   height: 38px;
   cursor: pointer;
-  border: none;
-  display: inline-block;
-  background-color: var(--pink);
-  border-radius: 50%;
+  border-radius: 26px;
   color: var(--white);
-}
-
-.button-forward {
-  background-image: url(../images/arrow-left.svg);
-  background-repeat: no-repeat;
-  background-size: 38px 38px;
+  border: 2px solid rgba(252, 252, 252, 0.3);
+  padding: 11px 11px;
 }
 
 .button-back {
-  background-image: url(../images/arrow-right.svg);
-  background-repeat: no-repeat;
-  background-size: 38px 38px;
+  transform: rotate(-180deg);
 }
 
-.hidden-button:hover {
+
+.slider-button:hover {
+  background-color: #FCFCFC;
+  color: #2D3440;
+  border: none;
+}
+
+.slider-button:focus {
+  color: #2D3440;
+  border: 2px solid var(--extra-dark);
+}
+
+.slider-button:active {
   background-color: #FCFCFC;
   color: #2D3440;
 }
@@ -386,16 +407,22 @@ fieldset {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-
+  fill: #FCFCFC4D;
 }
-
-/* Почему так отображается????
 
 .social-link:hover {
- background-color: var(--extra-dark);
+  fill: var(--extra-dark);
 }
 
-*/
+.social-link:focus {
+  fill: var(--extra-dark);
+  outline: 2px solid var(--extra-dark);
+}
+
+.social-link:active {
+  fill: var(--extra-dark);
+  opacity: 50%;
+}
 
 /*
 .social-media::before {
@@ -427,6 +454,7 @@ fieldset {
   border-radius: 50%;
   background-color: rgb(252, 252, 252, 30%);
   margin-right: 8px;
+  cursor: pointer;
 }
 
 .pagination-button-current {
@@ -438,16 +466,12 @@ fieldset {
 }
 
 .pagination-button:hover {
-  border: 1px solid var(--white);
+  outline: 1px solid var(--white);
 }
 
 .pagination-button:focus {
-  border: 1px solid var(--extra-dark);
+  outline: 1px solid var(--extra-dark);
 }
-
-/*
-Почему при навидении у меня дергается страница и как будто увеличиваются кнопки пагинации?
-*/
 
 .offer {
   display: flex;
@@ -505,14 +529,14 @@ fieldset {
 }
 
 .cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   min-width: 270px;
   min-height: 332px;
   margin-right: 30px;
-  text-align: center;
+}
 
+.cards:last-child {
+  margin-right: 0;
 }
 
 .card-background {
@@ -520,19 +544,17 @@ fieldset {
   width: 270px;
   height: 281px;
   border-radius: 8px;
-  align-content: end;
-  display: inline-block;
-  padding-top: 51px;
-}
-
-.cards:last-child {
-  margin-right: 0;
-}
-
-.product-card__price {
   display: flex;
-  justify-content: space-between;
-  margin-top: 16px;
+  position: relative;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.product-card__image {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 176px;
+  left: 50px;
 }
 
 .product-card {
@@ -540,11 +562,6 @@ fieldset {
   padding: 40px;
   padding-bottom: 24px;
   padding-top: 0;
-
-}
-
-.product-card__image {
-  border-radius: 50%;
 }
 
 .product-card__description {
@@ -553,6 +570,12 @@ fieldset {
   line-height: 24px;
   color: var(--extra-dark);
   padding-bottom: 8px;
+}
+
+.product-card__price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
 }
 
 .add-to-cart {
@@ -569,14 +592,16 @@ fieldset {
 }
 
 .add-to-cart:hover {
-  background-color: var(--light-pink);
-  border: 2px solid var(--button-secondary);
-  fill: #2D3440;
+  background-image: url(../images/cart-hover.svg);
 }
 
-.add-to-cart:focus {}
+.add-to-cart:focus {
+  background-image: url(../images/cart-focus.svg);
+}
 
-.add-to-cart:active {}
+.add-to-cart:active {
+  background-image: url(../images/cart-active.svg);
+}
 
 .advantages {
   border-radius: 16px;
@@ -984,6 +1009,7 @@ fieldset {
   color: var(--extra-dark);
   font-size: 14px;
   line-height: 20px;
+  margin-bottom: 44px;
 }
 
 .filter {
