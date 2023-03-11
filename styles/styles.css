@@ -454,6 +454,7 @@ justify-content: space-between;
   border-radius: 50%;
   background-color: rgb(252, 252, 252, 30%);
   margin-right: 8px;
+  cursor: pointer;
 }
 
 .pagination-button-current {
@@ -591,14 +592,16 @@ justify-content: space-between;
 }
 
 .add-to-cart:hover {
-  background-color: var(--light-pink);
-  border: 2px solid var(--button-secondary);
-  fill: #2D3440;
+  background-image: url(../images/cart-hover.svg);
 }
 
-.add-to-cart:focus {}
+.add-to-cart:focus {
+  background-image: url(../images/cart-focus.svg);
+}
 
-.add-to-cart:active {}
+.add-to-cart:active {
+  background-image: url(../images/cart-active.svg);
+}
 
 .advantages {
   border-radius: 16px;
