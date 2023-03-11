@@ -593,14 +593,18 @@ justify-content: space-between;
 
 .add-to-cart:hover {
   background-image: url(../images/cart-hover.svg);
+  background-size: 32px 32px;
+  background-color: var(--white);
 }
 
 .add-to-cart:focus {
   background-image: url(../images/cart-focus.svg);
+  background-size: 32px 32px;
 }
 
 .add-to-cart:active {
   background-image: url(../images/cart-active.svg);
+  background-size: 32px 32px;
 }
 
 .advantages {
