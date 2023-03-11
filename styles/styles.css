@@ -386,22 +386,22 @@ fieldset {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-
+  fill: #FCFCFC4D;
 }
 
 .social-link:hover {
- background-color: var(--extra-dark);
+  fill: var(--extra-dark);
 }
 
 .social-link:focus {
   background-color: var(--extra-dark);
   outline: 2px solid var(--extra-dark);
- }
+}
 
- .social-link:active {
+.social-link:active {
   background-color: var(--extra-dark);
   opacity: 50%;
- }
+}
 
 /*
 .social-media::before {
