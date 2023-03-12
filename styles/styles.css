@@ -1382,6 +1382,11 @@ fieldset {
   background-color: var(--white);
   border-radius: 4px;
   box-shadow: rgba(45, 52, 64, 0.12);
+  display: none;
+}
+
+.popover-open {
+  display: block;
 }
 
 .popover-content {
