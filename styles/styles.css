@@ -1389,13 +1389,13 @@ fieldset {
 }
 
 .popover-title {
-margin: 0;
-margin-bottom: 32px;
-padding: 0;
-font-size: 24px;
-line-height: 30px;
-font-weight: 700;
-color: var(--extra-dark);
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--extra-dark);
 }
 
 .cart-item {
@@ -1406,7 +1406,7 @@ color: var(--extra-dark);
 }
 
 .cart-item:last-child {
-  margin-bottom: 0;
+  margin-bottom: 32px;
 }
 
 .cart-item__title {
@@ -1427,16 +1427,15 @@ color: var(--extra-dark);
 .cart-item__price {
   font-size: 18px;
   font-weight: 700;
-
   min-width: 55px;
 }
 
 .cart-item-button {
-border: none;
-padding: 0;
-margin: 0;
-background-color: transparent;
-cursor: pointer;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .cart-item__wrapper {
@@ -1453,13 +1452,7 @@ cursor: pointer;
   font-weight: 700;
 }
 
-.popover-decorations::after {
-  width: 50px;
-  height: 1px;
-  color: #E7E7E7;
-  content: "";
-  margin-bottom: 32px;
-  position: absolute;
-  right: 0;
-  left: 0;
+.popover-decorative {
+  padding-top: 32px;
+  border-top: 1px solid #E7E7E7;
 }
