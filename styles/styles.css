@@ -1192,26 +1192,46 @@ fieldset {
   position: absolute;
   top: 2px;
   left: -16px;
-  background-image: url(../images/filter-radio-button.svg);
   background-size: 16px 16px;
   background-position: center;
   background-repeat: no-repeat;
   width: 16px;
   height: 16px;
+  cursor: pointer;
 }
 
-.control:hover .control-mark {
+.control-mark-fat {
+  background-image: url(../images/filter-radio-button.svg);
+}
+
+.control-mark-flavor {
+  background-image: url(../images/filter-box-button.svg);
+}
+
+.control:hover .control-mark-fat {
   background-image: url(../images/filter-radio-button-hover.svg);
 }
 
-.control-input:disabled + .control-mark {
+.control-input:disabled + .control-mark-fat {
   background-image: none;
   border: 1px solid var(--extra-dark);
   border-radius: 50%;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark {
+.control-input[type="checkbox"]:checked + .control-mark-fat {
   background-image: url(../images/filter-radio-button-checked.svg);
+}
+
+.control:hover .control-mark-flavor {
+  background-image: url(../images/filter-box-button-hover.svg);
+}
+
+.control-input:disabled + .control-mark-flavor {
+  opacity: 50%;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark-flavor {
+  background-image: url(../images/filter-box-button-checked.svg);
 }
 
 
