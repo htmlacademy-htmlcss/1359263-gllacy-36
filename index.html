@@ -53,6 +53,30 @@
                   </svg>
                   <span>Вход</span>
                 </a>
+                <div class="popover popover-entrance">
+                  <div class="popover-content">
+                    <h2 class="popover-title">Личный кабинет</h2>
+                    <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+                      <p class="field-group">
+                        <label class="visually-hidden" for="auth-login">Логин</label>
+                        <input class="auth-form-field field" type="text" id="auth-login" name="auth-login"
+                          placeholder="email@example.com">
+                      </p>
+                      <p class="field-group">
+                        <label class="visually-hidden" for="auth-password">Пароль</label>
+                        <input class="auth-form-field field" type="password" id="auth-password" name="auth-password"
+                          placeholder="Пароль">
+                      </p>
+                      <div class="popover-entrance__buttons-group">
+                        <button class="button button-secondary auth-form-button" type="submit">Войти</button>
+                        <p class="field-group auth-form-user">
+                          <a class="auth-form-user__options" href="#">Забыли пароль?</a>
+                          <a class="auth-form-user__options" href="#">Регистрация</a>
+                        </p>
+                      </div>
+                    </form>
+                  </div>
+                </div>
               </li>
               <li class="navigation-item">
                 <a class="navigation-link navigation-link-login navigation-user__link" href="#">
@@ -527,7 +551,27 @@
             </p>
             <div class="delivery-form-grid">
               <p class="delivery-form__date delivery__field-group">
-                <label class="delivery-form__label" for="delivery-date">Дата</label>
+                <span class="form-label delivery-form__label">
+                  <label" for="delivery-date">Дата</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toogle" type="button" aria-labelledby="tooltip-label-date">
+                      <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14">
+                        <g clip-path="url(#a)">
+                          <path fill="#2D3440" fill-rule="evenodd"
+                            d="M7.00026 2.12508c-2.69252 0-4.87524 2.18272-4.87524 4.87524 0 2.69252 2.18272 4.87528 4.87524 4.87528 2.69252 0 4.87524-2.18276 4.87524-4.87528S9.69278 2.12508 7.00026 2.12508ZM.79169 7.00032c0-3.4289 2.77967-6.20857 6.20857-6.20857 3.42894 0 6.20854 2.77967 6.20854 6.20857 0 3.42888-2.7796 6.20858-6.20854 6.20858-3.4289 0-6.20857-2.7797-6.20857-6.20858Zm6.20838-.66692c.36819 0 .66667.29848.66667.66667v2.21676c0 .36819-.29848.66667-.66667.66667-.36819 0-.66666-.29848-.66666-.66667V7.00007c0-.36819.29847-.66667.66666-.66667Zm0-2.21675c-.36819 0-.66666.29848-.66666.66667 0 .36818.29847.66666.66666.66666h.00583c.36819 0 .66667-.29848.66667-.66666 0-.36819-.29848-.66667-.66667-.66667h-.00583Z"
+                            clip-rule="evenodd" />
+                        </g>
+                        <defs>
+                          <clipPath id="a">
+                            <path fill="#fff" d="M0 0h14v14H0z" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения
+                      брони</span>
+                  </span>
+                </span>
                 <input class="field" type="date" id="delivery-date" name="delivery-date">
               </p>
               <p class="delivery-form__phone delivery__field-group">
@@ -536,7 +580,22 @@
                   placeholder="+7 800 999-00-00">
               </p>
               <p class="delivery-form__address delivery__field-group">
-                <label class="delivery-form__label" for="delivery-address">Адрес</label>
+                <span class="form-label delivery-form__label">
+                  <label for="delivery-address">Адрес</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toogle" type="button" aria-labelledby="tooltip-label-address">
+                      <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14">
+                        <g clip-path="url(#a)">
+                          <path fill="#2D3440" fill-rule="evenodd"
+                            d="M7.00026 2.12508c-2.69252 0-4.87524 2.18272-4.87524 4.87524 0 2.69252 2.18272 4.87528 4.87524 4.87528 2.69252 0 4.87524-2.18276 4.87524-4.87528S9.69278 2.12508 7.00026 2.12508ZM.79169 7.00032c0-3.4289 2.77967-6.20857 6.20857-6.20857 3.42894 0 6.20854 2.77967 6.20854 6.20857 0 3.42888-2.7796 6.20858-6.20854 6.20858-3.4289 0-6.20857-2.7797-6.20857-6.20858Zm6.20838-.66692c.36819 0 .66667.29848.66667.66667v2.21676c0 .36819-.29848.66667-.66667.66667-.36819 0-.66666-.29848-.66666-.66667V7.00007c0-.36819.29847-.66667.66666-.66667Zm0-2.21675c-.36819 0-.66666.29848-.66666.66667 0 .36818.29847.66666.66666.66666h.00583c.36819 0 .66667-.29848.66667-.66666 0-.36819-.29848-.66667-.66667-.66667h-.00583Z"
+                            clip-rule="evenodd" />
+                        </g>
+                        <defs><clipPath id="a"><path fill="#fff" d="M0 0h14v14H0z" /></clipPath></defs>
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-address">Укажите ваш адрес</span>
+                  </span>
+                </span>
                 <input class="field" type="text" id="delivery-address" name="delivery-address"
                   placeholder="ул. Большая Конюшенная, 19/8">
               </p>

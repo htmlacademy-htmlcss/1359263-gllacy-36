@@ -113,7 +113,7 @@ p {
 }
 
 .button-secondary {
-  min-width: 160px;
+  width: 160px;
   height: 52px;
   color: var(--white);
   background-color: var(--button-secondary);
@@ -822,6 +822,8 @@ fieldset {
   color: var(--light-gray);
   border: 1px solid var(--light-gray);
   border-radius: 4px;
+  display: flex;
+  height: 48px;
 }
 
 .field:hover {
@@ -1366,7 +1368,7 @@ fieldset {
   align-items: center;
 }
 
-/* Popover */
+/* Popover cart */
 
 .popover {
   width: 441px;
@@ -1411,7 +1413,7 @@ fieldset {
 }
 
 .cart-item:last-child {
-  margin-bottom: 32px;
+  margin-bottom: 0;
 }
 
 .cart-item__title {
@@ -1460,4 +1462,95 @@ fieldset {
 .popover-decorative {
   padding-top: 32px;
   border-top: 1px solid #E7E7E7;
+  margin-top: 32px;
+}
+
+/* Popover entrance */
+
+.popover-entrance {
+  width: 420px;
+  height: 350px;
+}
+
+.auth-form .field-group {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.auth-form-user {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.auth-form .field {
+  width: 324px;
+}
+
+.auth-form-field::placeholder {
+  color: var(--extra-dark);
+}
+
+.auth-form-user__options {
+  color: var(--extra-dark);
+}
+
+.popover-entrance__buttons-group {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.auth-form-button {
+  margin-right: 23px;
+  width: 113px;
+}
+
+/* Tooltip */
+
+.tooltip-toogle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+  cursor: pointer;
+}
+
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  color: var(--extra-dark);
+}
+
+.tooltip {
+  position: absolute;
+  margin-top: 4px;
+  margin-left: 2px;
+  width: 16px;
+  height: 16px;
+}
+
+.tooltip-text {
+  background-color: var(--button-secondary);
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: normal;
+  text-transform: none;
+  padding: 5px 8px;
+  border-radius: 8px;
+  width: 160px;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: 6px;
+  z-index: 1;
+  display: none;
+}
+/* Почему не работает код ниже??? */
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }
