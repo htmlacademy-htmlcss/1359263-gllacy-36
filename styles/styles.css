@@ -1574,6 +1574,13 @@ fieldset {
   align-items: flex-end;
 }
 
+.field-feedback-input-text{
+min-height: 149px;
+/* Как сделать чтобы input при набирании большого текста спускалась на след строку
+и input:placehjlder выглядил как в разметке? */
+}
+
+
 /* Tooltip */
 
 .tooltip-toogle {
