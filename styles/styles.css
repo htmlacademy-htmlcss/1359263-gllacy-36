@@ -433,6 +433,22 @@ input[type="radio"]:checked + .slides .slide {
   }
 }
 
+input[type="radio"]#slide1:checked ~ body {
+  --bg-color: #FF7799;
+}
+
+input[type="radio"]#slide2:checked ~ body {
+  --bg-color: ##69A9FF;
+}
+
+input[type="radio"]#slide3:checked ~ body {
+  --bg-color: #FCC850;
+}
+
+body {
+  background-color: var(--pink);
+}
+
 .slider-wrapper {
   position: relative;
   min-width: 367px;
