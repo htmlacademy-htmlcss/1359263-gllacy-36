@@ -159,75 +159,54 @@
 
       <main class="main-index">
 
-        <section class="slider block-space">
-          <!-- <div class="slider-item">
-            <div class="slider-section">
-              <h2 class="slider-title">Нежный пломбир с клубничным джемом</h2>
-              <p class="slider-item__description">
-                Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт
-                для всей семьи.</p>
-              <button class="main-button button" type="button">Заказать</button>
+        <section class="slider">
+          <div class="slider__slide-section">
+            <div class="slider-item">
+              <div class="slider-section">
+                <h2 class="slider-title">Нежный пломбир с клубничным джемом</h2>
+                <p class="slider-item__description">
+                  Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт
+                  для всей семьи.</p>
+                <button class="main-button button" type="button">Заказать</button>
+              </div>
             </div>
-          </div> -->
 
-
-
-          <!-- <div class="slider__picture-section"> -->
-          <div class="slider">
-
-            <input type="radio" name="slider" id="slide1" checked>
-            <input type="radio" name="slider" id="slide2">
-            <input type="radio" name="slider" id="slide3">
-
-            <div class="slides">
-              <div class="slide">
+            <div class="slider__picture-section">
+              <div class="slider-wrapper">
                 <img class="slider-picture" src="images/banner-icecream-pink.png" width="327" height="507"
                   alt="Мороженое c клубничным джемом">
+                <div class="slider-controls">
+                  <a class="slider-button button-forward">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                      <path fill="currentColor" fill-rule="evenodd"
+                        d="M7.13526 2.8647c-.25969-.2597-.68075-.2597-.94045 0-.2597.25969-.2597.68075 0 .94045l4.20129 4.20128-4.20133 4.20127c-.25969.2597-.25969.6808 0 .9405.2597.2597.68076.2597.94046 0l4.66867-4.66871c.001-.00094.0019-.00188.0029-.00283.2597-.2597.2597-.68075 0-.94045L7.13526 2.8647Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                  <a class="slider-button button-back">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                      <path fill="currentColor" fill-rule="evenodd"
+                        d="M7.13526 2.8647c-.25969-.2597-.68075-.2597-.94045 0-.2597.25969-.2597.68075 0 .94045l4.20129 4.20128-4.20133 4.20127c-.25969.2597-.25969.6808 0 .9405.2597.2597.68076.2597.94046 0l4.66867-4.66871c.001-.00094.0019-.00188.0029-.00283.2597-.2597.2597-.68075 0-.94045L7.13526 2.8647Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </div>
               </div>
-              <div class="slide">
-                <img class="slider-picture" src="images/banner-icecream-yellow.png" width="350" height="507"
-                  alt="Мороженое cо вкусом банана">
-              </div>
-              <div class="slide">
-                <img class="slider-picture" src="images/banner-icecream-leaf.png" width="350" height="507"
-                  alt="Мороженое c карамельным пломбиром и маршмеллоу">
+              <div class="slider-preview">
+                <img class="slider-picture-preview" src="images/slider-banana.png" width="100" height="150"
+                  alt="Сливочное мороженое со вкусом банана">
+                <img class="slider-picture-preview" src="images/slider-vanilla.png" width="100" height="150"
+                  alt="Карамельный пломбир с маршмеллоу">
               </div>
             </div>
-
-            <div class="controls">
-              <label class="slider__control-label" for="slide1"></label>
-              <label class="slider__control-label" for="slide2"></label>
-              <label class="slider__control-label" for="slide3"></label>
-            </div>
-
-          </div>
-          <!-- </div> -->
-
-
-          <!-- <div class="slider-controls">
-            <a class="slider-button button-forward">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <path fill="currentColor" fill-rule="evenodd"
-                  d="M7.13526 2.8647c-.25969-.2597-.68075-.2597-.94045 0-.2597.25969-.2597.68075 0 .94045l4.20129 4.20128-4.20133 4.20127c-.25969.2597-.25969.6808 0 .9405.2597.2597.68076.2597.94046 0l4.66867-4.66871c.001-.00094.0019-.00188.0029-.00283.2597-.2597.2597-.68075 0-.94045L7.13526 2.8647Z"
-                  clip-rule="evenodd" />
-              </svg>
-            </a>
-            <a class="slider-button button-back">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <path fill="currentColor" fill-rule="evenodd"
-                  d="M7.13526 2.8647c-.25969-.2597-.68075-.2597-.94045 0-.2597.25969-.2597.68075 0 .94045l4.20129 4.20128-4.20133 4.20127c-.25969.2597-.25969.6808 0 .9405.2597.2597.68076.2597.94046 0l4.66867-4.66871c.001-.00094.0019-.00188.0029-.00283.2597-.2597.2597-.68075 0-.94045L7.13526 2.8647Z"
-                  clip-rule="evenodd" />
-              </svg>
-            </a>
           </div>
 
-
-          <div>
+          <div class="slider__bottom-section">
             <ol class="pagination-section">
-              <li class="pagination-button-current pagination-button">
+              <li class="pagination-button">
                 <a href="#"></a>
               </li>
-              <li class="pagination-button">
+              <li class="pagination-button-current pagination-button">
                 <a href="#"></a>
               </li>
               <li class="pagination-button">
@@ -237,7 +216,7 @@
             <ul class="social-media">
               <li class="navigation-item">
                 <a class="social-link" href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 28 28">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 28 28">
                     <path fill="#FCFCFC" fill-rule="evenodd"
                       d="M26 14c0 6.627-5.373 12-12 12S2 20.627 2 14 7.373 2 14 2s12 5.373 12 12Zm-11.57-3.141c-1.167.485-3.5 1.49-6.998 3.014-.568.226-.866.447-.893.663-.046.366.412.51 1.034.705.085.027.173.054.263.084.613.199 1.437.432 1.865.441.389.008.823-.152 1.302-.48 3.268-2.207 4.955-3.322 5.061-3.346.075-.017.179-.039.249.024.07.062.063.18.056.212-.046.193-1.84 1.862-2.77 2.726-.29.269-.495.46-.537.504-.094.097-.19.19-.282.279-.57.548-.996.96.024 1.632.49.323.882.59 1.273.856.427.291.853.581 1.405.943.14.092.274.187.405.28.497.355.944.673 1.496.623.32-.03.652-.331.82-1.23.397-2.126 1.179-6.73 1.36-8.628a2.1122 2.1122 0 0 0-.02-.472.5056.5056 0 0 0-.172-.325c-.143-.117-.365-.142-.465-.14-.451.008-1.143.249-4.476 1.635Z"
                       clip-rule="evenodd" />
@@ -268,7 +247,7 @@
                 </a>
               </li>
             </ul>
-          </div> -->
+          </div>
 
         </section>
 
@@ -682,8 +661,8 @@
                   <form class="auth-form-feedback" action="https://echo.htmlacademy.ru/" method="post">
                     <input class="field-feedback-input" type="text" id="first-last-name" placeholder="Имя и фамилия">
                     <input class="field-feedback-input" type="email" id="auth-password" placeholder="email@example.com">
-                    <input class="popover-input field-feedback-input field-feedback-input-text" type="text" id="auth-login"
-                      placeholder="В свободной форме">
+                    <input class="popover-input field-feedback-input field-feedback-input-text" type="text"
+                      id="auth-login" placeholder="В свободной форме">
                     <button class="button button-secondary feedback-button" type="submit">Отправить</button>
                   </form>
                 </div>
