@@ -43,6 +43,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100%;
+  min-width: 1170px;
   display: flex;
   flex-direction: column;
   font-family: "inter", sans-serif;
@@ -374,15 +375,12 @@ fieldset {
   align-items: center;
 }
 
-.slider-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
 .slider-section {
   margin-left: 70px;
   margin-bottom: 126px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .slider-title {
@@ -580,6 +578,8 @@ fieldset {
   font-size: 32px;
   text-align: center;
   margin-bottom: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .popular-block {
@@ -628,6 +628,8 @@ fieldset {
   line-height: 24px;
   color: var(--extra-dark);
   padding-bottom: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .product-card__price {
@@ -748,11 +750,15 @@ fieldset {
   line-height: 30px;
   color: var(--extra-dark);
   width: 303px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .our-blog__title {
   line-height: 20px;
   width: 137px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .subscription-block {
