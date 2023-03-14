@@ -270,8 +270,8 @@ p {
 }
 
 .dropdown {
-position: relative;
-display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .dropdown-content {
@@ -290,13 +290,19 @@ display: inline-block;
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
 /* Показать выпадающее меню при наведении курсора */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 /* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
 
 .phone-header {
   font-weight: 700;
@@ -372,12 +378,59 @@ fieldset {
   background-repeat: no-repeat;
   background-size: 327px 312px;
   background-position: center;
-  display: inline-block;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .slider__picture-section {
   display: flex;
   align-items: center;
+}
+
+.slider {
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: #999;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+input[type="radio"]:checked + .slides .slide {
+  animation: scroll 1s ease forwards;
+}
+
+@keyframes scroll {
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .slider-wrapper {
@@ -455,26 +508,6 @@ fieldset {
   fill: var(--extra-dark);
   opacity: 50%;
 }
-
-/*
-.social-media::before {
-  content: url(../images/slider-banana.png);
-  display: inline-block;
-  width: 100px;
-  height: 150px;
-  position: relative;
-  order: 1;
-}
-
-.social-media::after {
-  content: url(../images/slider-vanilla.png);
-  display: inline-block;
-  width: 100px;
-  height: 150px;
-  position: relative;
-  order: 2;
-}
-*/
 
 .pagination-section {
   display: flex;
