@@ -85,6 +85,8 @@ p {
   cursor: pointer;
   border: none;
   display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .main-button {
