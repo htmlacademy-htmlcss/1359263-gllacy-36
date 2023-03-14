@@ -307,8 +307,9 @@ box-sizing: border-box;
 }
 
 .dropdown-content a:hover {
-  background-color: #FFCBD8;
-  font-weight: 700;
+  background-color: var(--button-secondary);
+  border-radius: 30px;
+  color: var(--white);
 }
 
 .dropdown:hover .dropdown-content {
@@ -426,7 +427,7 @@ fieldset {
   margin-top: 10px;
 }
 
-label {
+.slider__control-label {
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -495,7 +496,6 @@ input[type="radio"]#slide3:checked ~ body {
 .button-forward {
   transform: rotate(-180deg);
 }
-
 
 .slider-button:hover {
   background-color: #FCFCFC;
@@ -1022,13 +1022,6 @@ input[type="radio"]#slide3:checked ~ body {
 .social-item:last-child {
   margin-right: 0;
 }
-
-/* Не получается сделать
-.social-link:hover {
-  background-color: var(--extra-dark);
-  border-radius: 50%;
-}
-*/
 
 .footer__items {
   display: grid;
