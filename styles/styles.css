@@ -445,10 +445,6 @@ input[type="radio"]#slide3:checked ~ body {
   --bg-color: #FCC850;
 }
 
-body {
-  background-color: var(--pink);
-}
-
 .slider-wrapper {
   position: relative;
   min-width: 367px;
