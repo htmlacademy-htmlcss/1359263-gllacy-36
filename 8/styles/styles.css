@@ -466,6 +466,14 @@ fieldset {
   align-items: flex-end;
 }
 
+.slider2 {
+  margin-left: 37px;
+}
+
+.slider3 {
+  margin-left: 41px;
+}
+
 .social-media {
   list-style: none;
   display: flex;
