@@ -278,30 +278,48 @@ p {
   display: none;
   position: absolute;
   background-color: var(--white);
+  border-radius: 4px;
   min-width: 135px;
   box-shadow: rgba(45, 52, 64, 0.12);
   z-index: 1;
+  padding: 8px 0;
+}
+
+.dropdown-content__first {
+font-weight: 700;
+}
+
+.dropdown-content__decoration {
+width: 135px;
+height: 1px;
+background-color: #B9B9B9;
+margin: 4px 16px;
+box-sizing: border-box;
 }
 
 .dropdown-content a {
-  color: ;
-  padding: ;
+  color: var(--extra-dark);
+  font-size: 14px;
+  line-height: 20px;
+  padding: 6px 16px;
   text-decoration: none;
   display: block;
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #FFCBD8;
+  font-weight: 700;
 }
 
-/* Показать выпадающее меню при наведении курсора */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+.dropdown:hover .navigation-item__catalog {
+  background-color: var(--button-secondary);
+  border-radius: 30px;
+  color: var(--white);
+  background-image: url(../images/arrow-up.svg);
 }
 
 .phone-header {
