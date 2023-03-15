@@ -700,7 +700,6 @@ fieldset {
 .advantages-list {
   display: grid;
   grid-template-columns: 505px 505px;
-  grid-template-rows: 66px 66px;
   column-gap: 32px;
   row-gap: 40px;
   margin-bottom: 56px;
@@ -722,6 +721,8 @@ fieldset {
 
 .advantages-description {
   width: 440px;
+  min-height: 66px;
+  text-overflow: ellipsis;
 }
 
 .blog {
@@ -736,6 +737,7 @@ fieldset {
 
 .our-blog-block {
   background-image: url(../images/trio-icecream.jpg);
+  background-color: var(--white);
   margin-right: 30px;
 }
 
@@ -805,6 +807,7 @@ fieldset {
   height: 534px;
   border-radius: 16px;
   background-image: url(../images/icecream-on-table.jpg);
+  background-color: var(--white);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -930,6 +933,7 @@ fieldset {
   width: 1170px;
   height: 492px;
   background-image: url(../images/trio-cones-icecream.jpg);
+  background-color: var(--white);
   border-radius: 16px;
   display: flex;
 
@@ -1069,7 +1073,7 @@ fieldset {
   text-decoration: none;
 }
 
-.breadcrumbs__decorative::after {
+.breadcrumbs-link::after {
   content: url(../images/double-arrow-right.svg);
   width: 12px;
   height: 12px;
@@ -1078,11 +1082,15 @@ fieldset {
   top: 2px;
 }
 
+.breadcrumbs-item:last-child .breadcrumbs-link::after {
+  content: none;
+}
+
 .breadcrumbs-link_current {
   position: relative;
 }
 
-.breadcrumbs-link_current::after {
+.breadcrumbs-link_current::before {
   position: absolute;
   content: "";
   bottom: 0;
@@ -1100,7 +1108,7 @@ fieldset {
   color: var(--extra-dark);
   font-size: 14px;
   line-height: 20px;
-  margin-bottom: 44px;
+  margin-bottom: 64px;
 }
 
 .filter {
@@ -1268,8 +1276,6 @@ fieldset {
   height: 16px;
   cursor: pointer;
 }
-
-.control-label {}
 
 .control-mark-fat {
   background-image: url(../images/filter-radio-button.svg);
