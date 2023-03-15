@@ -1269,9 +1269,7 @@ fieldset {
   cursor: pointer;
 }
 
-.control-label {
-
-}
+.control-label {}
 
 .control-mark-fat {
   background-image: url(../images/filter-radio-button.svg);
@@ -1624,11 +1622,11 @@ fieldset {
   padding: 64px;
   background-color: var(--white);
   border-radius: 8px;
-
 }
 
 .modal-auth {
   width: 570px;
+  height: 545px;
   box-sizing: border-box;
 }
 
@@ -1647,22 +1645,31 @@ fieldset {
   cursor: pointer;
 }
 
-.field-feedback-input {
-  margin-bottom: 16px;
-  width: 442px;
-}
-
 .popover-input {
   padding: 14px 16px;
   border: 1px solid #B9B9B9;
   border-radius: 4px;
   box-sizing: border-box;
+  width: 442px;
+  min-height: 48px;
+  margin-bottom: 16px;
+  display: inline-block;
+  font-size: 16px;
 }
 
-.field-feedback-input::placeholder {
+.popover-input::placeholder {
   color: #B9B9B9;
   font-size: 16px;
   line-height: 20px;
+  position: absolute;
+  top: 14px;
+  left: 16px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .feedback-button {
@@ -1670,16 +1677,9 @@ fieldset {
   margin-top: 16px;
 }
 
-.auth-form-feedback {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
 .field-feedback-input-text {
-  min-height: 149px;
-  /* Как сделать чтобы input при набирании большого текста спускалась на след строку
-и input:placehjlder выглядил как в разметке? */
+  height: 149px;
+
 }
 
 
