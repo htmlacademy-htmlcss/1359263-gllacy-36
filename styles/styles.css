@@ -675,14 +675,15 @@ fieldset {
   align-items: center;
   justify-content: center;
   width: 1170px;
-  height: 480px;
+  height: auto;
+  padding: 24px 0;
 }
 
 .advantages__background {
   box-sizing: border-box;
   background-color: var(--white);
   width: calc(100% - 48px);
-  height: calc(100% - 48px);
+  min-height: calc(100% - 48px);
   border-radius: 16px;
   display: flex;
   flex-direction: column;
@@ -699,9 +700,9 @@ fieldset {
 .advantages-list {
   display: grid;
   grid-template-columns: 505px 505px;
-  grid-template-rows: 65px 65px;
   column-gap: 32px;
   row-gap: 40px;
+  margin-bottom: 56px;
 }
 
 .advantages-item {
@@ -720,6 +721,8 @@ fieldset {
 
 .advantages-description {
   width: 440px;
+  min-height: 66px;
+  text-overflow: ellipsis;
 }
 
 .blog {
@@ -734,6 +737,7 @@ fieldset {
 
 .our-blog-block {
   background-image: url(../images/trio-icecream.jpg);
+  background-color: var(--white);
   margin-right: 30px;
 }
 
@@ -803,6 +807,7 @@ fieldset {
   height: 534px;
   border-radius: 16px;
   background-image: url(../images/icecream-on-table.jpg);
+  background-color: var(--white);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -928,6 +933,7 @@ fieldset {
   width: 1170px;
   height: 492px;
   background-image: url(../images/trio-cones-icecream.jpg);
+  background-color: var(--white);
   border-radius: 16px;
   display: flex;
 
@@ -1067,7 +1073,7 @@ fieldset {
   text-decoration: none;
 }
 
-.breadcrumbs__decorative::after {
+.breadcrumbs-link::after {
   content: url(../images/double-arrow-right.svg);
   width: 12px;
   height: 12px;
@@ -1076,11 +1082,15 @@ fieldset {
   top: 2px;
 }
 
+.breadcrumbs-item:last-child .breadcrumbs-link::after {
+  content: none;
+}
+
 .breadcrumbs-link_current {
   position: relative;
 }
 
-.breadcrumbs-link_current::after {
+.breadcrumbs-link_current::before {
   position: absolute;
   content: "";
   bottom: 0;
@@ -1098,7 +1108,7 @@ fieldset {
   color: var(--extra-dark);
   font-size: 14px;
   line-height: 20px;
-  margin-bottom: 44px;
+  margin-bottom: 64px;
 }
 
 .filter {
@@ -1251,6 +1261,7 @@ fieldset {
   position: relative;
   display: block;
   padding-left: 8px;
+  margin-right: 16px;
 }
 
 .control-mark {
@@ -1317,8 +1328,9 @@ fieldset {
 .catalog-filter__flavor {
   margin-right: 16px;
   padding: 10px 24px 10px 48px;
-  width: 604px;
-  height: 40px;
+  min-width: 604px;
+  height: auto;
+  flex-wrap: wrap;
 }
 
 .button-filter {
@@ -1557,6 +1569,7 @@ fieldset {
 .popover-entrance {
   width: 420px;
   height: 350px;
+  padding: 48px;
 }
 
 .auth-form .field-group {
@@ -1616,11 +1629,11 @@ fieldset {
   padding: 64px;
   background-color: var(--white);
   border-radius: 8px;
-
 }
 
 .modal-auth {
   width: 570px;
+  height: 545px;
   box-sizing: border-box;
 }
 
@@ -1639,22 +1652,31 @@ fieldset {
   cursor: pointer;
 }
 
-.field-feedback-input {
-  margin-bottom: 16px;
-  width: 442px;
-}
-
 .popover-input {
   padding: 14px 16px;
   border: 1px solid #B9B9B9;
   border-radius: 4px;
   box-sizing: border-box;
+  width: 442px;
+  min-height: 48px;
+  margin-bottom: 16px;
+  display: inline-block;
+  font-size: 16px;
 }
 
-.field-feedback-input::placeholder {
+.popover-input::placeholder {
   color: #B9B9B9;
   font-size: 16px;
   line-height: 20px;
+  position: absolute;
+  top: 14px;
+  left: 16px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .feedback-button {
@@ -1662,16 +1684,9 @@ fieldset {
   margin-top: 16px;
 }
 
-.auth-form-feedback {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
 .field-feedback-input-text {
-  min-height: 149px;
-  /* Как сделать чтобы input при набирании большого текста спускалась на след строку
-и input:placehjlder выглядил как в разметке? */
+  height: 149px;
+
 }
 
 
