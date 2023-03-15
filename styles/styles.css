@@ -1569,6 +1569,7 @@ fieldset {
 .popover-entrance {
   width: 420px;
   height: 350px;
+  padding: 48px;
 }
 
 .auth-form .field-group {
