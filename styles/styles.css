@@ -1662,7 +1662,7 @@ fieldset {
   height: 20px;
   background-color: transparent;
   border: none;
-  background-image: url("../images/criss-cross.svg");
+  background-image: url("../images/cross.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
