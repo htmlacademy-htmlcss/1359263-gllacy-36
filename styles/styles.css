@@ -226,7 +226,7 @@ p {
 }
 
 .navigation-item__catalog {
-  background-image: url(../images/arrow-down.svg);
+  background-image: url(../images/arrow-short-down.svg);
   background-repeat: no-repeat;
   background-size: 16px 16px;
   background-position: center right 16px;
@@ -639,7 +639,7 @@ fieldset {
 }
 
 .add-to-cart {
-  background-image: url(../images/cart.svg);
+  background-image: url(../images/shop-cart.svg);
   background-repeat: no-repeat;
   background-size: 16px 16px;
   background-position: center;
@@ -1127,7 +1127,7 @@ fieldset {
   width: 100%;
   padding: 8px 18px 8px 16px;
   padding-right: 48px;
-  background-image: url("../images/arrow-down.svg");
+  background-image: url("../images/arrow-short-down.svg");
   background-repeat: no-repeat;
   background-position: right 16px center;
   appearance: none;
@@ -1646,7 +1646,7 @@ fieldset {
   height: 20px;
   background-color: transparent;
   border: none;
-  background-image: url("../images/cross.svg");
+  background-image: url("../images/criss-cross.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
