@@ -151,6 +151,10 @@ p {
 
 .wide-button {
   width: 250px;
+  height: 44px;
+  font-size: 16px;
+  padding: 12px 32px;
+
 }
 
 .block-center {
@@ -176,6 +180,7 @@ p {
 .navigation {
   margin-top: 24px;
   margin-bottom: 24px;
+  justify-content: space-between;
 }
 
 .navigation-logo {
@@ -187,7 +192,7 @@ p {
 
 .navigation-list {
   line-height: 20px;
-  width: 590px;
+  max-width: 469px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -229,6 +234,9 @@ p {
 .navigation-user__link {
   background-color: var(--light-pink);
   border-radius: 27px;
+  height: 32px;
+  box-sizing: border-box;
+  padding: 6px 16px;
 }
 
 .navigation-user .navigation-item {
@@ -266,10 +274,6 @@ p {
   font-size: 14px;
 }
 
-.navigation-user__search {
-  padding: 8px 8px;
-}
-
 .navigation-link-login .navigation-icon {
   right: auto;
   left: 16px;
@@ -279,6 +283,7 @@ p {
 .navigation-user {
   max-width: 382px;
   margin-left: auto;
+  justify-content: flex-end;
 }
 
 .navigation-user .navigation-link {
@@ -428,7 +433,7 @@ fieldset {
 .slider-wrapper {
   position: relative;
   min-width: 367px;
-  margin-top: 24px;
+  margin-top: 21px;
   display: flex;
   justify-content: center;
 }
@@ -507,7 +512,6 @@ fieldset {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  fill: #FCFCFC4D;
   margin-right: 16px;
 }
 
@@ -521,7 +525,7 @@ fieldset {
 }
 
 .social-link:hover {
-  fill: var(--extra-dark);
+  background-color: var(--extra-dark);
 }
 
 .social-link:focus {
@@ -620,7 +624,7 @@ fieldset {
   width: 527px;
   font-size: 32px;
   text-align: center;
-  margin-bottom: 113px;
+  margin-bottom: 110px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -659,12 +663,13 @@ fieldset {
 .product-card__image {
   border-radius: 50%;
   position: absolute;
-  bottom: 176px;
+  bottom: 164px;
   left: 50px;
 }
 
 .product-card {
   width: 190px;
+  min-height: 76px;
   padding: 40px;
   padding-bottom: 24px;
   padding-top: 0;
@@ -676,15 +681,19 @@ fieldset {
   line-height: 24px;
   max-width: 190px;
   color: var(--extra-dark);
-  padding-bottom: 8px;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.product-card__specification {
+  padding-top: 8px;
+  margin-bottom: 20px;
 }
 
 .product-card__price {
   display: flex;
   justify-content: space-between;
-  margin-top: 16px;
+  align-items: center;
 }
 
 .add-to-cart {
@@ -726,6 +735,7 @@ fieldset {
   width: 1170px;
   min-height: auto;
   padding: 24px 0;
+  box-sizing: border-box;
 }
 
 .advantages__background {
@@ -744,6 +754,7 @@ fieldset {
   font-size: 32px;
   margin-bottom: 56px;
   margin-top: 56px;
+  text-align: center;
 }
 
 .advantages-list {
@@ -752,6 +763,7 @@ fieldset {
   column-gap: 32px;
   row-gap: 40px;
   margin-bottom: 56px;
+  box-sizing: border-box;
 }
 
 .advantages-item {
@@ -770,7 +782,7 @@ fieldset {
 
 .advantages-description {
   width: 440px;
-  min-height: 66px;
+  max-height: 66px;
   text-overflow: ellipsis;
 }
 
@@ -815,7 +827,8 @@ fieldset {
 
 .our-blog__title {
   line-height: 20px;
-  width: 137px;
+  max-width: 303px;
+  padding-bottom: 12px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -838,6 +851,7 @@ fieldset {
 
 .subscription-form {
   display: flex;
+  align-items: center;
 }
 
 .subscription-title {
@@ -848,12 +862,18 @@ fieldset {
 .subscription-input {
   width: 332px;
   height: 48px;
-  margin-right: 14px;
+  margin-right: 18px;
 }
 
 .subscription-input::placeholder {
   color: var(--light-gray);
   opacity: 1;
+  font-size: 16px;
+}
+
+.subscription-button {
+  height: 44px;
+  width: 152px;
   font-size: 16px;
 }
 
@@ -888,6 +908,8 @@ fieldset {
   padding: 40px 40px 42px 40px;
   margin: 64px;
   box-sizing: border-box;
+  width: 500px;
+  min-height: 406px;
 }
 
 .delivery-form-grid {
@@ -916,6 +938,7 @@ fieldset {
   min-width: 152px;
   height: 44px;
   margin-top: 12px;
+  font-size: 16px;
 }
 
 .delivery__field-group {
@@ -982,6 +1005,10 @@ fieldset {
   color: var(--extra-dark);
   font-weight: 700;
   margin-bottom: 8px;
+}
+
+.form-label {
+  height: 20px;
 }
 
 .contacts {
@@ -1167,6 +1194,10 @@ fieldset {
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 64px;
+}
+
+.catalog-button {
+  min-width: 179px;
 }
 
 .filter {
