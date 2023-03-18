@@ -1136,6 +1136,10 @@ fieldset {
   margin-bottom: 40px;
 }
 
+.header-inner__title {
+  font-size: 32px;
+}
+
 .navigation-catalog {
   margin-bottom: 32px;
 }
@@ -1292,12 +1296,12 @@ fieldset {
 
 .toggle-min {
   top: -8px;
-  left: -10px;
+  left: 0;
 }
 
 .toggle-max {
   top: -8px;
-  right: -2px;
+  right: -32px;
 }
 
 .range-scale-background {
@@ -1308,7 +1312,9 @@ fieldset {
   display: flex;
   justify-content: center;
   margin-bottom: 8px;
-  padding-left: 16px;
+  box-sizing: border-box;
+  width: 135px;
+  margin-left: 16px;
 }
 
 .range-input {
@@ -1336,7 +1342,6 @@ fieldset {
   width: 440px;
   box-sizing: border-box;
   padding: 8px 24px 8px 48px;
-
 }
 
 .catalog__display {
