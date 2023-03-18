@@ -781,7 +781,8 @@ fieldset {
 }
 
 .advantages-description {
-  width: 440px;
+  min-width: 440px;
+  max-width: 442px;
   max-height: 66px;
   text-overflow: ellipsis;
 }
@@ -916,6 +917,7 @@ fieldset {
   display: grid;
   grid-template-columns: 117px 287px;
   gap: 16px 20px;
+  align-items: center;
 }
 
 .delivery-form__address {
