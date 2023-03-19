@@ -302,7 +302,7 @@ p {
   background-color: var(--white);
   border-radius: 4px;
   min-width: 135px;
-  top: 44px;
+  margin-top: 8px;
   box-shadow: rgba(45, 52, 64, 0.12);
   z-index: 1;
   padding: 8px 0;
