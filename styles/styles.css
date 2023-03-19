@@ -1847,7 +1847,7 @@ fieldset {
 
 /* Почему не работает код ниже??? */
 
-.tooltip-toggle:hover + .tooltip-text,
-.tooltip-toggle:focus + .tooltip-text {
+.tooltip-toogle:hover + .tooltip-text,
+.tooltip-toogle:focus + .tooltip-text {
   display: block;
 }
