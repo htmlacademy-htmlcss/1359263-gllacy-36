@@ -1346,7 +1346,7 @@ fieldset {
 
 .catalog__display {
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
 }
 
@@ -1371,6 +1371,7 @@ fieldset {
   position: relative;
   display: block;
   padding-left: 8px;
+  padding-right: 16px;
   margin-right: 16px;
 }
 
@@ -1437,7 +1438,7 @@ fieldset {
 
 .catalog-filter__flavor {
   margin-right: 16px;
-  padding: 10px 24px 10px 48px;
+  padding: 10px 24px 10px 40px;
   min-width: 604px;
   height: auto;
   flex-wrap: wrap;
