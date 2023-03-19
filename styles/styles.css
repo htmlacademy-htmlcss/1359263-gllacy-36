@@ -810,6 +810,7 @@ fieldset {
   display: flex;
   flex-wrap: wrap;
   width: 1170px;
+  row-gap: 10px;
 }
 
 .blog-container {
