@@ -316,6 +316,7 @@ p {
   width: 135px;
   border-bottom: 1px solid #B9B9B9;
   margin: 4px 16px;
+  padding-bottom: 50px;
 }
 
 .dropdown-content a {
