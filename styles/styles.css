@@ -1178,7 +1178,7 @@ fieldset {
   text-decoration: none;
 }
 
-.breadcrumbs-link::after {
+.breadcrumbs-item::after {
   content: url(../images/double-arrow-right.svg);
   width: 12px;
   height: 12px;
@@ -1187,7 +1187,7 @@ fieldset {
   top: 2px;
 }
 
-.breadcrumbs-item:last-child .breadcrumbs-link::after {
+.breadcrumbs-item:last-child::after {
   content: none;
 }
 
