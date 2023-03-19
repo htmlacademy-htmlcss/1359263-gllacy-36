@@ -154,7 +154,6 @@ p {
   height: 44px;
   font-size: 16px;
   padding: 12px 32px;
-
 }
 
 .block-center {
@@ -481,7 +480,6 @@ fieldset {
 .slider-button:hover {
   background-color: #FCFCFC;
   color: #2D3440;
-
 }
 
 .slider-button:focus {
@@ -514,7 +512,6 @@ fieldset {
   display: flex;
   flex-wrap: wrap;
 }
-
 
 .social-link {
   width: 24px;
@@ -1030,7 +1027,6 @@ fieldset {
   background-color: var(--white);
   border-radius: 16px;
   display: flex;
-
 }
 
 .contacts-info {
@@ -1209,10 +1205,6 @@ fieldset {
   margin-bottom: 44px;
 }
 
-.filter-margin {
-
-}
-
 .catalog-products {
   color: var(--extra-dark);
   font-size: 14px;
@@ -1234,6 +1226,7 @@ fieldset {
   min-width: 196px;
   font: inherit;
   font-weight: 400;
+  gap: 32px;
 }
 
 .select-control {
@@ -1379,13 +1372,6 @@ fieldset {
   position: relative;
   display: block;
   padding-left: 8px;
-  padding-right: 16px;
-  margin-right: 16px;
-}
-
-.control-last-child {
-  padding-right: 0;
-  margin-right: 0;
 }
 
 .control-mark {
@@ -1658,7 +1644,6 @@ fieldset {
   height: 156px;
   align-items: center;
   padding: 0;
-
 }
 
 .popover-empty-cart__title {
@@ -1804,7 +1789,6 @@ fieldset {
 
 .field-feedback-input-text {
   height: 149px;
-
 }
 
 
