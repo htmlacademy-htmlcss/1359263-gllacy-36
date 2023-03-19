@@ -1208,6 +1208,10 @@ fieldset {
   margin-bottom: 44px;
 }
 
+.filter-margin {
+
+}
+
 .catalog-products {
   color: var(--extra-dark);
   font-size: 14px;
@@ -1223,7 +1227,7 @@ fieldset {
   background-color: var(--light-pink);
   border-color: transparent;
   border-radius: 20px;
-  height: 36px;
+  min-height: 36px;
   align-items: center;
   box-sizing: border-box;
   min-width: 196px;
@@ -1264,7 +1268,7 @@ fieldset {
   position: absolute;
   height: 2px;
   background-color: var(--dark);
-  width: 56px;
+  width: 75px;
 }
 
 .range-toggle {
@@ -1301,7 +1305,7 @@ fieldset {
 
 .toggle-max {
   top: -8px;
-  right: -32px;
+  right: -13px;
 }
 
 .range-scale-background {
@@ -1339,22 +1343,23 @@ fieldset {
 }
 
 .fat-controls {
-  width: 440px;
   box-sizing: border-box;
-  padding: 8px 24px 8px 48px;
+  flex-wrap: wrap;
+  max-width: 750px;
+  padding: 8px 24px 8px 40px;
 }
 
 .catalog__display {
   display: flex;
-
   align-items: center;
+  row-gap: 10px;
 }
 
 .catalog-filter__section {
   margin-right: 24px;
-  margin-bottom: 16px;
   min-width: 196px;
   height: 64px;
+  margin-bottom: 16px;
 }
 
 .catalog-filter__section:last-child {
@@ -1373,6 +1378,11 @@ fieldset {
   padding-left: 8px;
   padding-right: 16px;
   margin-right: 16px;
+}
+
+.control-last-child {
+  padding-right: 0;
+  margin-right: 0;
 }
 
 .control-mark {
@@ -1420,11 +1430,6 @@ fieldset {
 
 .control-input[type="checkbox"]:checked + .control-mark-flavor {
   background-image: url(../images/filter-box-button-checked.svg);
-}
-
-
-.catalog-filter__flavor-section {
-  margin-right: 16px;
 }
 
 .catalog-filter__tytle {
