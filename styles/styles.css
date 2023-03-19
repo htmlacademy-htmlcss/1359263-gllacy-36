@@ -171,6 +171,7 @@ p {
 .block-display {
   display: flex;
   align-items: center;
+  row-gap: 10px;
 }
 
 .main-index {
@@ -1352,7 +1353,9 @@ fieldset {
 .catalog__display {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   row-gap: 10px;
+  max-width: 1170px;
 }
 
 .catalog-filter__section {
