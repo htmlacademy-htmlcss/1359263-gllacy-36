@@ -1802,7 +1802,6 @@ fieldset {
   height: 149px;
 }
 
-
 /* Tooltip */
 
 .tooltip-toogle {
@@ -1844,8 +1843,6 @@ fieldset {
   z-index: 1;
   display: none;
 }
-
-/* Почему не работает код ниже??? */
 
 .tooltip-toogle:hover + .tooltip-text,
 .tooltip-toogle:focus + .tooltip-text {
