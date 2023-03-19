@@ -302,7 +302,7 @@ p {
   background-color: var(--white);
   border-radius: 4px;
   min-width: 135px;
-  top: 50px;
+  top: 44px;
   box-shadow: rgba(45, 52, 64, 0.12);
   z-index: 1;
   padding: 8px 0;
@@ -314,7 +314,6 @@ p {
 
 .dropdown-content__decoration {
   width: 135px;
-  padding-bottom: 12px;
   border-bottom: 1px solid #B9B9B9;
   margin: 4px 16px;
 }
